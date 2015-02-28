@@ -4,7 +4,7 @@ published: true
 
 ---
 layout: post
-title: Blogging Like a Hacker
+title: ASCII Effect
 ---
 
 ## 3D ASCII Effect
