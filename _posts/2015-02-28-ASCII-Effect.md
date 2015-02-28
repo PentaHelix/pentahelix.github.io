@@ -89,4 +89,24 @@ Brace yourselves, for now the ratio games have begun!
 
 Speaking of ratios:
 The characters are in a 9/16 ratio, this will come in handy later. The whole image, however, is 16/9. This will also come in handy. After adding this image to unity, we need to edit the import settings slightly. In the endl, it should look like this:
-![CharMap Import Settings]()
+![CharMap Import Settings](http://i.imgur.com/q9hxqaL.png)
+These settings make dealing with this texture in a shader easier.
+
+To actually use the texture in the shader, we need to tweak a few things:
+```glsl
+Properties {
+	_MainTex ("Base (RGB)", 2D) = "white" {}
+	_CharTex ("Base (RGB)", 2D) = "white" {}
+}
+```
+Adding the texture property to the shaders' Properties
+
+```glsl
+CGPROGRAM
+#pragma vertex vert_img
+#pragma fragment frag
+#include "UnityCG.cginc"
+uniform sampler2D _MainTex;
+uniform sampler2D _CharTex;
+```
+Adding the uniform sampler2D
