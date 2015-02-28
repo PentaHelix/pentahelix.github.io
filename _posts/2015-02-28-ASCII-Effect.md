@@ -154,10 +154,10 @@ The first few lines should be self explanatory, we pixelize the RenderTexture an
 Charmap is used as a mask so to speak, since we only display a pixel if the corresponding value on CharTex is white. 
 
 ###A bit about the ratios:
-The pixelated screen is has 128 by 41 pixels, which is nearly 16*16 / 9*9.
-The screen is 16/9 ideally, so each pixel is 9 / 16 by default, this eliminates characters stretching and becoming unrecognizable.
+The pixelated screen is 128 by 41 pixels, which is nearly 16*16 / 9*9.
+The screen is 16/9 ideally, so each "pixel" is 9 / 16 by default, this eliminates characters stretching and becoming unrecognizable.
 
-The character map is 16 / 9 so that we can easily convert vectors to pixels. In a shader 1 unit in the x direction is not the same length as 1 unit in y, if the texture is not square. if it is 16/9 we can easily correct this by multiplying the y value by 16/9. This is happening when calculating onSpriteY.
+The character map is 16 / 9 so that we can easily convert vectors to pixels. In a shader 1 unit in the x direction is not the same length as 1 unit in y, if the texture is not square. If it is 16/9 we can easily correct this by multiplying the y value by 16/9. This is happening when calculating onSpriteY.
 
 And there you go, you now have realtime ASCII post processing.
 ![Finished!](http://i.imgur.com/dLZVgky.png)
