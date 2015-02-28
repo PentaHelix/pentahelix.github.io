@@ -14,4 +14,31 @@ Now, let's get to the technical aspect of things. In order to schieve this, all 
 ![Basic Unity Project](http://i.imgur.com/6zsevcC.png)
 Notice that the IndieEffects Package is already installed
 
-In the Indie Effects directory you will see a few sub-directories, the ones which are interesting to us are Classes/ and ShaderDir/Normal/. In these directories is everything you need to create your own shader.
+In the Indie Effects directory you will see a few sub-directories, the ones which are interesting to us are Classes/ and ShaderDir/Normal/. In these directories is everything you need to create your own shader. After looking at a few Effects, you will have realized that an Indie Effect is made up of 2 components: 1 JS Script + 1 Shader = 1 Effect. There's nothing stopping us from making our own now! Firstly, I created a new foder in my Assets for keeping everything clean. Now, we need a JS file and a shader fle. Both can be created from the context menu in the Project window. To start off, we simply create a shader that does nothing but acts as a template.
+
+```javascript
+#pragma strict
+@script RequireComponent(IndieEffects)
+@script AddComponentMenu("Indie Effects/FX Skeleton")
+
+import IndieEffects;
+import UnityEngine.Texture;
+var fxRes : IndieEffects;
+private var mat : Material;
+var pixelShader : Shader;
+
+function Start () {
+	fxRes = GetComponent(IndieEffects);
+    mat = new Material(pixelShader);
+}
+
+function Update () {
+	fxRes.RT.filterMode = FilterMode.Point;
+    mat.SetTexture("_MainTex", fxRes.RT);
+}
+```
+
+```glsl
+
+```
+
