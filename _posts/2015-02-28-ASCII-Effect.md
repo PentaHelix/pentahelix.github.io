@@ -64,4 +64,4 @@ Shader "Custom/asciifyGL" {
 
 Additionally, you need to add these components to your camera:
 ![Camera Components](http://i.imgur.com/CAzWNkf.png)
-
+The Indie Effects Component can be added from the "Add Component" menu. Don't forget to set Texture Size to 512. Then, simply add your JS and the shader as the Pixel Shader property
