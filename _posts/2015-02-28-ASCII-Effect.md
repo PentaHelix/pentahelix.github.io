@@ -138,7 +138,7 @@ float3 frag (v2f_img i):COLOR{
 	int onSpriteY = ((i.uv.y * 52.0f * 41.0f) % 52.0f)*16.0f/9.0f;
 			
 			
-	half2 charCoords = half2((darkness * 31.0f / 300.0f)+(onSpriteX/300.0f), (onSpriteY / 300.0f));
+	half2 charCoords = half2((darkness * 31.0f / 300.0f)+(onSpriteX/300.0f),(onSpriteY / 300.0f));
 		
 	float3 charC = tex2D(_CharTex, charCoords);
 				
@@ -152,3 +152,6 @@ float3 frag (v2f_img i):COLOR{
 	return finalColor;
 }
 ```
+This is the complete frag shader. Let's have a look at it.
+The first few lines should be self explanatory, we pixelize the RenderTexture and save the RGB channels of the current pixel in colR, colG, and colB. Colors, just like positions, use values between 0 and 1 in glsl, so we multiply them by 255 to get the more common RGB notation. Next, we analyze the color and determine it's brightness.
+
