@@ -130,10 +130,7 @@ float3 frag (v2f_img i):COLOR{
 	float colG = c.g * 255;
 	float colB = c.b * 255;
 				
-	int brighness = (int)(((colR + colG + colB)/3/200) * 6);
-	if(brighness > 8){
-		brighness = 8;
-	}
+	int brighness = min((int)(((colR + colG + colB)/3/200) * 6), 8);
 	int onSpriteX = (i.uv.x * 31.0f * 128.0f) % 31.0f;
 	int onSpriteY = ((i.uv.y * 52.0f * 41.0f) % 52.0f)*16.0f/9.0f;
 			
