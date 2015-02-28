@@ -86,3 +86,7 @@ For actually asciifying the game, what you will need is some sort of lookup png.
 This is what I use:
 ![ASCII grayscale](http://i.imgur.com/ScbSP70.png)
 Brace yourselves, for now the ratio games have begun!
+
+Speaking of ratios:
+The characters are in a 9/16 ratio, this will come in handy later. The whole image, however, is 16/9. This will also come in handy. After adding this image to unity, we need to edit the import settings slightly. In the endl, it should look like this:
+![CharMap Import Settings]()
