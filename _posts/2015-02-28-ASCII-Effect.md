@@ -99,7 +99,7 @@ Properties {
 	_CharTex ("Base (RGB)", 2D) = "white" {}
 }
 ```
-Adding the texture property to the shaders' Properties
+Adding the texture property to the shaders' Properties.
 
 ```glsl
 CGPROGRAM
