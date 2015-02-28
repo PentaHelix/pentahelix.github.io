@@ -165,4 +165,3 @@ The character map is 16 / 9 so that we can easily convert vectors to pixels. In 
 And there you go, you now have realtime ASCII post processing.
 ![Finished!](http://i.imgur.com/dLZVgky.png)
 Hope this was somewhat understandable :)
-
