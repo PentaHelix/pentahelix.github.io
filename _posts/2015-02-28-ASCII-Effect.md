@@ -16,6 +16,7 @@ Notice that the IndieEffects Package is already installed
 
 In the Indie Effects directory you will see a few sub-directories, the ones which are interesting to us are Classes/ and ShaderDir/Normal/. In these directories is everything you need to create your own shader. After looking at a few Effects, you will have realized that an Indie Effect is made up of 2 components: 1 JS Script + 1 Shader = 1 Effect. There's nothing stopping us from making our own now! Firstly, I created a new foder in my Assets for keeping everything clean. Now, we need a JS file and a shader fle. Both can be created from the context menu in the Project window. To start off, we simply create a shader that does nothing but acts as a template.
 
+JavaScript
 ```javascript
 #pragma strict
 @script RequireComponent(IndieEffects)
@@ -39,6 +40,25 @@ function Update () {
 ```
 
 ```glsl
-
+Shader "Custom/asciifyGL" {
+	Properties {
+		_MainTex ("Base (RGB)", 2D) = "white" {}
+	}
+	SubShader {
+		Pass {
+            ZTest Always Cull Off ZWrite Off Fog { Mode off }
+           
+       	 	CGPROGRAM
+        	#pragma vertex vert_img
+        	#pragma fragment frag
+        	#include "UnityCG.cginc"
+        	uniform sampler2D _MainTex;
+        	float3 frag (v2f_img i):COLOR{
+				return tex2D(_MainTex, i.uv);
+        	}
+        	ENDCG
+        }
+    }
+}
 ```
 
