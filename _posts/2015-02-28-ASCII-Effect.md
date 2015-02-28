@@ -130,15 +130,15 @@ float3 frag (v2f_img i):COLOR{
 	float colG = c.g * 255;
 	float colB = c.b * 255;
 				
-	int darkness = (int)(((colR + colG + colB)/3/200) * 6);
-	if(darkness > 8){
-		darkness = 8;
+	int brighness = (int)(((colR + colG + colB)/3/200) * 6);
+	if(brighness > 8){
+		brighness = 8;
 	}
 	int onSpriteX = (i.uv.x * 31.0f * 128.0f) % 31.0f;
 	int onSpriteY = ((i.uv.y * 52.0f * 41.0f) % 52.0f)*16.0f/9.0f;
 			
 			
-	half2 charCoords = half2((darkness * 31.0f / 300.0f)+(onSpriteX/300.0f),(onSpriteY / 300.0f));
+	half2 charCoords = half2((brighness * 31.0f / 300.0f)+(onSpriteX/300.0f),(onSpriteY / 300.0f));
 		
 	float3 charC = tex2D(_CharTex, charCoords);
 				
