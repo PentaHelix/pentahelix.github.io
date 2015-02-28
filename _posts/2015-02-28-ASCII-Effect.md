@@ -68,7 +68,7 @@ The Indie Effects Component can be added from the "Add Component" menu. Don't fo
 
 So, what happens in these file? The script initializes the Shader in Start(), and then sets the texture to the current RenderTexture in Update(). The shader then goes through every single pixel and returns a color for it. Right now, we simply return the unchanged values, so there should not appear any effect on the camera. 
 
-To start with the ASCII Effect, we first pixelate the view. To do this we simply modify  the shader:
+To start with the ASCII Effect, we first pixelate the view. To do this we simply modify  the frag method in the shader:
 
 ###Shader
 ```glsl
@@ -77,3 +77,6 @@ float pixel_height = 1.0f/41.0f;
 half2 new_uv = half2((int)(i.uv.x/pixel_width)*pixel_width, (int)(i.uv.y/pixel_height)*pixel_height);
 return tex2D(_MainTex, new_uv);
 ```
+This shoulfd give us a pixelized image.
+
+We now have a (seemingly) 128x41 screen (the real resolution is higher of course). The biggest problem with fragment shaders is that they don't work with pixels, but with vectors. The bottom left corner is (0,0), the top right (1,1). 
