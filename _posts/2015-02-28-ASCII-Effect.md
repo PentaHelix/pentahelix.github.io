@@ -113,6 +113,13 @@ Adding the uniform sampler2D.
 
 Lastly, add the asset in the shaders' inspector:
 ![Adding the texture](http://i.imgur.com/RjxiYIc.png)
+Don't forget to hit Apply!
 
 Now we have access to the texture in the shader.
 You can test this by returning the color of the CharTex instead of the MainTex.
+
+Now the hard part starts:
+
+```glsl
+
+```
