@@ -70,6 +70,7 @@ So, what happens in these file? The script initializes the Shader in Start(), an
 
 To start with the ASCII Effect, we first pixelate the view. To do this we simply modify  the shader:
 
+###Shader
 ```glsl
 float pixel_width = 1.0f/128.0f;
         		float pixel_height = 1.0f/41.0f;
