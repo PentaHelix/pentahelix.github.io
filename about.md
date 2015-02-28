@@ -12,7 +12,9 @@ I program in JS, PHP, Java, Haxe, C# and Python
 ### More Information
 
 Currently working on chrawl, a 3d roguelike visualized in ASCII
+
 Favorite Music: Glitch Swing
+
 Favorite Food:  Selchfleischknödel with Sauerkraut and Gravy (Doesn't get anymore austrian than this)
 
 ### Contact me
