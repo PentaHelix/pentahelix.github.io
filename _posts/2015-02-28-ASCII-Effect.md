@@ -110,3 +110,6 @@ uniform sampler2D _MainTex;
 uniform sampler2D _CharTex;
 ```
 Adding the uniform sampler2D.
+
+Lastly, add the asset in the shaders' inspector:
+![Adding the texture](http://i.imgur.com/RjxiYIc.png)
