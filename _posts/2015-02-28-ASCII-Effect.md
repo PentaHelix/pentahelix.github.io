@@ -2,6 +2,11 @@
 published: true
 ---
 
+---
+layout: post
+title: Blogging Like a Hacker
+---
+
 ## 3D ASCII Effect
 
 I recently posted about my WIP game chrawl on the roguelikedev subreddit. A few people showed interest in how I achieved my 3d ASCII effect, so this post will explain how you can ASCII in 3d too!
