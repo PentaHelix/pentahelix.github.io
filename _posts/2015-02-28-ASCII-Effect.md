@@ -9,12 +9,12 @@ I recently posted about my WIP game chrawl on the roguelikedev subreddit. A few 
 ![3d ASCII Demo](http://i.imgur.com/Mm5OksT.gif)
 Here is the 3d effect in all its glory.
 
-Now, let's get to the technical aspect of things. In order to schieve this, all you should need is a 3d engine/framework which supports post processing. I used unity for the quick setup because I wanted to get this running without writing a 3d framework first. If you want to use Unity as well, you might be thinking that Post Processing requieres Unity Pro. It does, but with a package called [Indie Effects](http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/) you can achieve similar effects to the ones in Unity Pro. I'll leave it to you to install Indie Effects and setup a simple scene you want to ASCIIfy, but after setting everything up, your project should look something like this:
+Now, let's get to the technical side of things. In order to achieve this, all you should need is a 3d engine/framework which supports post processing. I used unity for the quick setup because I wanted to get this running without writing a 3d framework first. If you want to use Unity as well, you might be thinking that Post Processing requieres Unity Pro. It does, but with a package called [Indie Effects](http://forum.unity3d.com/threads/indieeffects-bringing-almost-aaa-quality-post-process-fx-to-unity-indie.198568/) you can achieve similar effects to the ones in Unity Pro. I'll leave it to you to install Indie Effects and set up a simple scene you want to ASCIIfy, but after setting everything up, your project should look something like this:
 
 ![Basic Unity Project](http://i.imgur.com/6zsevcC.png)
 Notice that the IndieEffects Package is already installed
 
-In the Indie Effects directory you will see a few sub-directories, the ones which are interesting to us are Classes/ and ShaderDir/Normal/. In these directories is everything you need to create your own shader. After looking at a few Effects, you will have realized that an Indie Effect is made up of 2 components: 1 JS Script + 1 Shader = 1 Effect. There's nothing stopping us from making our own now! Firstly, I created a new foder in my Assets for keeping everything clean. Now, we need a JS file and a shader fle. Both can be created from the context menu in the Project window. To start off, we simply create a shader that does nothing but acts as a template.
+In the Indie Effects directory you will see a few sub-directories, the ones which are interesting to us are Classes/ and ShaderDir/Normal/. In these directories is everything you need to create your own shader. After looking at a few Effects, you will have realized that an Indie Effect is made up of 2 components: 1 Script + 1 Shader = 1 Effect. There's nothing stopping us from making our own now! Firstly, I created a new folder in my Assets to keep everything organized. Now, we need a JS file and a shader file. Both can be created from the context menu in the Project window. To start off, we simply create a shader that does nothing but act as a template.
 
 ###JavaScript
 ```javascript
@@ -64,7 +64,7 @@ Shader "Custom/asciifyGL" {
 
 Additionally, you need to add these components to your camera:
 ![Camera Components](http://i.imgur.com/CAzWNkf.png)
-The Indie Effects Component can be added from the "Add Component" menu. Don't forget to set Texture Size to 512. Then, simply add your JS and the shader as the Pixel Shader property.
+The Indie Effects Component can be added from the "Add Component" menu. Don't forget to set Texture Size to 512. Then, simply add your Script and the shader as the Pixel Shader property.
 
 So, what happens in these file? The script initializes the Shader in Start(), and then sets the texture to the current RenderTexture in Update(). The shader then goes through every single pixel and returns a color for it. Right now, we simply return the unchanged values, so there should not appear any effect on the camera. 
 
@@ -85,10 +85,10 @@ For actually asciifying the game, what you will need is some sort of lookup png.
 
 This is what I use:
 ![ASCII grayscale](http://i.imgur.com/ScbSP70.png)
-Brace yourselves, for now the ratio games have begun!
+If you are too lazy to make your own here's [mine](https://drive.google.com/file/d/0B2xTN1nKxr-pVlAyYjFaRkQyckk/view?usp=sharing)
 
 Speaking of ratios:
-The characters are in a 9/16 ratio, this will come in handy later. The whole image, however, is 16/9. This will also come in handy. After adding this image to unity, we need to edit the import settings slightly. In the endl, it should look like this:
+The characters are in a 9/16 ratio, this will come in handy later. The whole image, however, is 16/9. This will also come in handy. After adding this image to unity, we need to edit the import settings slightly. In the end, it should look like this:
 ![CharMap Import Settings](http://i.imgur.com/q9hxqaL.png)
 These settings make dealing with this texture in a shader easier.
 
