@@ -16,7 +16,7 @@ Notice that the IndieEffects Package is already installed
 
 In the Indie Effects directory you will see a few sub-directories, the ones which are interesting to us are Classes/ and ShaderDir/Normal/. In these directories is everything you need to create your own shader. After looking at a few Effects, you will have realized that an Indie Effect is made up of 2 components: 1 JS Script + 1 Shader = 1 Effect. There's nothing stopping us from making our own now! Firstly, I created a new foder in my Assets for keeping everything clean. Now, we need a JS file and a shader fle. Both can be created from the context menu in the Project window. To start off, we simply create a shader that does nothing but acts as a template.
 
-{% highlight javascript %}
+```javascript
 #pragma strict
 @script RequireComponent(IndieEffects)
 @script AddComponentMenu("Indie Effects/FX Skeleton")
@@ -36,7 +36,7 @@ function Update () {
 	fxRes.RT.filterMode = FilterMode.Point;
     mat.SetTexture("_MainTex", fxRes.RT);
 }
-{% endhighlight %}
+```
 
 ```glsl
 
