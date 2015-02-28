@@ -109,4 +109,4 @@ CGPROGRAM
 uniform sampler2D _MainTex;
 uniform sampler2D _CharTex;
 ```
-Adding the uniform sampler2D
+Adding the uniform sampler2D.
