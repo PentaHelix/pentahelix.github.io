@@ -36,7 +36,7 @@ function Update () {
 	fxRes.RT.filterMode = FilterMode.Point;
     mat.SetTexture("_MainTex", fxRes.RT);
 }
-```
+{% endhighlight %}
 
 ```glsl
 
