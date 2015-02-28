@@ -66,4 +66,10 @@ Additionally, you need to add these components to your camera:
 ![Camera Components](http://i.imgur.com/CAzWNkf.png)
 The Indie Effects Component can be added from the "Add Component" menu. Don't forget to set Texture Size to 512. Then, simply add your JS and the shader as the Pixel Shader property.
 
-So, what happens in these file? The script initializes the Shader in Start(), and then sets the texture to the current RenderTexture in Update();
+So, what happens in these file? The script initializes the Shader in Start(), and then sets the texture to the current RenderTexture in Update(). The shader then goes through every single pixel and returns a color for it. Right now, we simply return the unchanged values, so there should not appear any effect on the camera. 
+
+To start with the ASCII Effect, we first pixelate the view. To do this we simply modify  the shader:
+
+```glsl
+		
+``
