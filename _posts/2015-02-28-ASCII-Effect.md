@@ -38,7 +38,7 @@ function Update () {
     mat.SetTexture("_MainTex", fxRes.RT);
 }
 ```
-
+Shader
 ```glsl
 Shader "Custom/asciifyGL" {
 	Properties {
