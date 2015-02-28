@@ -153,5 +153,5 @@ float3 frag (v2f_img i):COLOR{
 }
 ```
 This is the complete frag shader. Let's have a look at it.
-The first few lines should be self explanatory, we pixelize the RenderTexture and save the RGB channels of the current pixel in colR, colG, and colB. Colors, just like positions, use values between 0 and 1 in glsl, so we multiply them by 255 to get the more common RGB notation. Next, we analyze the color and determine it's brightness.
+The first few lines should be self explanatory, we pixelize the RenderTexture and save the RGB channels of the current pixel in colR, colG, and colB. Colors, just like positions, use values between 0 and 1 in glsl, so we multiply them by 255 to get the more common RGB notation. Next, we analyze the color and determine it's brightness. I found this formula to work well enough, you can change 200 to something else to make the scene look brighter/darker. onSpriteX/Y are a bit more complex, 
 
