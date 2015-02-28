@@ -2,14 +2,19 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+I am a Student born in 1997.
+I quickly started to develop an interest in computers and programming.
+I program in JS, PHP, Java, Haxe, C# and Python
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Currently working on chrawl, a 3d roguelike visualized in ASCII
+Favorite Music: Glitch Swing
+Favorite Food:  Selchfleischknödel with Sauerkraut and Gravy (Doesn't get anymore austrian than this)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jakkuen@gmail.com](mailto:jakkuen@gmail.com)
