@@ -156,3 +156,13 @@ This is the complete frag shader. Let's have a look at it.
 The first few lines should be self explanatory, we pixelize the RenderTexture and save the RGB channels of the current pixel in colR, colG, and colB. Colors, just like positions, use values between 0 and 1 in glsl, so we multiply them by 255 to get the more common RGB notation. Next, we analyze the color and determine it's brightness. I found this formula to work well enough, you can change 200 to something else to make the scene look brighter/darker. onSpriteX/Y are a bit more complex, they get the position on CharTex that we want to work with for this position on MainTex. We want to divide the screen width into [pixel_width] segments, each with 31 pixels (the width of one character), resulting in 31 * 128. However, each segment should start at 0 and go to 31, so we need a modulo 31. The same thing goes for onSpriteY. Keep in mind that these numbers are in pixels, not a Vector. Now we get the color of the pixel in CharTex on this position. Firstly, we set off the position by brightness * 31. So a brightness of two would set us to the - in the character map, five would set us to }. Then add onSpriteX and onSpriteY (divided by [charTex_width] to convert to a vector).
 Charmap is used as a mask so to speak, since we only display a pixel if the corresponding value on CharTex is white. 
 
+A bit about the ratios:
+The pixelated screen is has 128 by 41 pixels, which is nearly 16*16 / 9*9.
+The screen is 16/9 ideally, so each pixel is 9 / 16 by default, this eliminates characters stretching and becoming unrecognizable.
+
+The character map is 16 / 9 so that we can easily convert vectors to pixels. In a shader 1 unit in the x direction is not the same length as 1 unit in y, if the texture is not square. if it is 16/9 we can easily correct this by multiplying the y value by 16/9.
+
+And there you go, you now have realtime ASCII post processing.
+![Finished!](http://i.imgur.com/dLZVgky.png)
+Hope this was somewhat understandable :)
+
