@@ -73,7 +73,7 @@ To start with the ASCII Effect, we first pixelate the view. To do this we simply
 ###Shader
 ```glsl
 float pixel_width = 1.0f/128.0f;
-        		float pixel_height = 1.0f/41.0f;
-        		half2 new_uv = half2((int)(i.uv.x/pixel_width)*pixel_width, (int)(i.uv.y/pixel_height)*pixel_height);
-				return tex2D(_MainTex, new_uv);
+float pixel_height = 1.0f/41.0f;
+half2 new_uv = half2((int)(i.uv.x/pixel_width)*pixel_width, (int)(i.uv.y/pixel_height)*pixel_height);
+return tex2D(_MainTex, new_uv);
 ``
