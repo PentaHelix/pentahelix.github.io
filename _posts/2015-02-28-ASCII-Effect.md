@@ -79,4 +79,4 @@ return tex2D(_MainTex, new_uv);
 ```
 This shoulfd give us a pixelized image.
 
-We now have a (seemingly) 128x41 screen (the real resolution is higher of course). The biggest problem with fragment shaders is that they don't work with pixels, but with vectors. The bottom left corner is (0,0), the top right (1,1). So we hace to use 1/128 for the amount of pixels instead of screen_width/128. 
+We now have a (seemingly) 128x41 screen (the real resolution is higher of course). The biggest problem with fragment shaders is that they don't work with pixels, but with vectors. The bottom left corner is (0,0), the top right (1,1). So we have to use 1/128 for the amount of pixels instead of screen_width/128. 
