@@ -2,10 +2,6 @@
 published: false
 ---
 
----
-published: false
----
-
 This week I was relatively busy (read as CS:GO and school). However, I managed to get some work done on chrawl. The major things are probably animations for hands and a gelatinous cube, as well as pathfinding enemies. Additionally, I worked on concepts for the magic system and combat. As I have things planned right now, chrawl will primarily be focused on magic, which is why I'm starting to think about magic so early indev. 
 First up, Pathfinding enemies:
 ![Pathfinding](http://i.imgur.com/i3qcC3D.gif)
