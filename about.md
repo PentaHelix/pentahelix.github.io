@@ -7,7 +7,7 @@ published: true
 
 I am a Student born in 1997.
 I quickly started to develop an interest in computers and programming.
-I program in JS, PHP, Java, Haxe, C# and Python
+I program in JS, PHP, SQL, Java, Haxe, C# and Python
 
 ### More Information
 
