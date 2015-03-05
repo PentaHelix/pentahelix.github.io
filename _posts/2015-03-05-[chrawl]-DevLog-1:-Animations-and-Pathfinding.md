@@ -23,4 +23,4 @@ Simple Magic: Small utility and weak offensive/defensive spells, things like a s
 
 Tomes: Uncommon spells that are mana intensive and mostly used for combat. I'm considering  procedurally generating tomes and implementing something like a library.
 
-Scrolls: One time spells that are rare and extremely powerful. Some may use them to become powerful spellcasters, others who are more oriented on becoming a buisnessman could sell them. 
+Scrolls: One time spells that are rare and extremely powerful. Some may use them to become powerful spellcasters, others who are more oriented on becoming a buisnessman could sell them.
