@@ -6,7 +6,7 @@ excerpt_separator: "<!--more-->"
 ---
 
 ![3d ASCII Demo](http://i.imgur.com/Mm5OksT.gif)
-Learn how to make one of your onw in this post!
+Learn how to program this post processing effect in Unity using IndieEffects!
 
 <!--excerpt-->
 
