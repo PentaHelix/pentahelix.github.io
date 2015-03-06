@@ -22,7 +22,7 @@ Now, for the magic system. There will be 3 main types of magic casting.
 3. Scrolls
 
 
-Simple Magic: Small utility and weak offensive/defensive spells, things like a small fireball, a glowing orb of light to act as a torch, a shield, ....
+Simple Magic: Small utility and weak offensive/defensive spells, things like a small fireball, a glowing orb of light to act as a torch, a shield, .... . They don't requiere any itmes to cast.
 
 Tomes: Uncommon spells that are mana intensive and mostly used for combat. I'm considering  procedurally generating tomes and implementing something like a library.
 
