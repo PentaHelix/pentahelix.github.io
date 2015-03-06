@@ -15,7 +15,7 @@ First up, Pathfinding enemies:
 
 Also, here's a gif of some new animations:
 ![Animations](http://i.imgur.com/qkkBV4M.gif)
-Yes I know, the left hand looks like some sort of bizarre torch a zombie would carry, I haven't gotten to animating that yet.
+Yes I know, the left hand looks like some sort of bizarre torch a zombie would carry, I haven't gotten to animating that one yet.
 
 Now, for the magic system. There will be 3 main types of magic casting.
 1. Simple "Hand Magic"
