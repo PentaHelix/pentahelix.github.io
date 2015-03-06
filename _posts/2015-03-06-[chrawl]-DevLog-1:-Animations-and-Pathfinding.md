@@ -16,7 +16,7 @@ First up, Pathfinding enemies:
 Also, here's a gif of some new animations:
 ![Animations](http://i.imgur.com/qkkBV4M.gif)
 
-Now, for the magic system. There will be 3 main types of magic casting abilities.
+Now, for the magic system. There will be 3 main types of magic casting.
 1. Simple "Hand Magic"
 2. Tomes
 3. Scrolls
