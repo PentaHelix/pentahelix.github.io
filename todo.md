@@ -5,7 +5,6 @@ published: true
 ---
 
 #To-Do 
-What I'm currently working on.
 
 ##chrawl
 - Magic System
