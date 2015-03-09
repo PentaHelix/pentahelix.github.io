@@ -11,7 +11,7 @@ What I'm currently working on.
 - Magic System
 - Camera Improvements
 	- ~~Bobbing~~
-    - ~~Hand Smoothing~~
+    - ~~Smooth Hand Follow~~
 
 
 
