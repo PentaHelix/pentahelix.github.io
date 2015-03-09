@@ -9,6 +9,7 @@ What I'm currently working on.
 
 ##chrawl
 - Magic System
+- Camera Improvements
 
 
 
