@@ -55,6 +55,7 @@ excerpt_separator: <!--excerpt-->
 markdown: redcarpet
 redcarpet:   
   extensions: ["strikethrough"] 
+ 
 highlighter: pygments
 permalink: /:title/
 
