@@ -4,8 +4,7 @@ permalink: /todo/
 published: true
 ---
 
-#To-Do
-What I'm currently working on.
+#To-Do ##What I'm currently working on.
 
 ##chrawl
 - Magic System
