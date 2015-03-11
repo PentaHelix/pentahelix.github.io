@@ -12,3 +12,7 @@ published: true
     - ~~Smooth Hand Follow~~
 - Map Generation
 	- Generating Gelationus Cubes
+    
+    
+##Side Projects
+- Random Chance Visualisation
