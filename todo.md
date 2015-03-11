@@ -11,7 +11,8 @@ published: true
 	- ~~Bobbing~~
     - ~~Smooth Hand Follow~~
 - Map Generation
-	- Generating Gelationus Cubes
+	- ~~Generating Gelationus Cubes~~
+    - Generating Torches
     
     
 ##Side Projects
