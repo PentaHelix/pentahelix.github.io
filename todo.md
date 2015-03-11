@@ -13,6 +13,7 @@ published: true
 - Map Generation
 	- ~~Generating Gelationus Cubes~~
     - Generating Torches
+    - Fixing disconnected Rooms
     
     
 ##Side Projects
