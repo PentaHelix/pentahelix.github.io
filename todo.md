@@ -10,6 +10,5 @@ published: true
 - Camera Improvements
 	- ~~Bobbing~~
     - ~~Smooth Hand Follow~~
-
-
-
+- Map Generation
+	- Generating Gelationus Cubes
