@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 
 ![Pathfinding](http://i.imgur.com/i3qcC3D.gif)
