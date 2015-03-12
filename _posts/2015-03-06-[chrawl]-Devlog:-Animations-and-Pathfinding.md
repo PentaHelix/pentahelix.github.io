@@ -2,11 +2,6 @@
 published: true
 ---
 
----
-published: true
-layout: post
----
-
 ![Pathfinding](http://i.imgur.com/i3qcC3D.gif)
 This week: new Animations, Pathfinding, and prototyping magic systems.
 
