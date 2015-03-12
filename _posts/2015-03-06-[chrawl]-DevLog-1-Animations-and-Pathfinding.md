@@ -1,3 +1,9 @@
+---
+published: false
+layout: post
+title: chrawl DevLog 1
+---
+
 ![Pathfinding](http://i.imgur.com/i3qcC3D.gif)
 This week: new Animations, Pathfinding, and prototyping magic systems.
 
