@@ -8,7 +8,7 @@ This week: Torches and gelatinous cubes in map generation, as well as Visual Imp
 
 First up this week, here is the progress made on spawning enemies on the map, as well as spawning torches on certain walls.
 ![Spawning Cubes](http://i.imgur.com/GGBFf72.gif)
-Right now only gelatinous cubes are the spawning, because they are the onlly enemies in the game as of now. You can also see the pathfinding pathes.
+Right now only gelatinous cubes are the spawning, because they are the only enemies in the game as of now. You can also see the pathfinding pathes.
 ![Spawning Torches](http://i.imgur.com/ziweZ21.gif)
 Torches really make the map look better
 
