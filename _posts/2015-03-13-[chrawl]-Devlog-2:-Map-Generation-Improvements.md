@@ -13,8 +13,8 @@ Right now only gelatinous cubes are the spawning, because they are the only enem
 Torches really make the map look better
 
 As you may have noticed on the torch gifs, the camera is now bobbing up and down, and the hands follow the view a bit more smoothly.
-![Bobbing]()
+![Bobbing](http://i.imgur.com/C3zdJFo.gif)
+
 ![Smooth Hands](http://i.imgur.com/BfCjGkv.gif)
 
-I also got some work done on randomly generating magical spells for tomes/scrolls, here's a simple flowchart of the generating prototype.
-![Spell Generation]()
+I also got some work done on randomly generating magical spells for tomes/scrolls. Basically, I'm implenenting a flag system which consist of many different flags that can be any value between 0 and 1. These flags completely define a spell, and can be saved to act as a seed for spells. Flags are split up into effect flags and visual flags, but some flags influence others, for example the flag for fire damage influences the flag for the color red.
