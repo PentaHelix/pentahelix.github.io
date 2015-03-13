@@ -21,3 +21,5 @@ As you may have noticed on the torch gifs, the camera is now bobbing up and down
 I also got some work done on randomly generating spells for tomes/scrolls. 
 
 Basically, I'm implenenting a flag system which consist of many different flags that can be any value between 0 and 1. These flags completely define a spell, and can be saved to act as a seed for spells. Flags are split up into effect flags and visual flags, but some flags influence others, for example the flag for fire damage influences the flag for the color red.
+
+See you next week.
