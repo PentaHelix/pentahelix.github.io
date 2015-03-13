@@ -1,5 +1,6 @@
 ---
 published: false
+layout: post
 ---
 
 ![Torches](http://i.imgur.com/ziweZ21.gif)
