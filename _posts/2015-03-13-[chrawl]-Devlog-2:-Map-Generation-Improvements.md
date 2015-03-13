@@ -8,12 +8,14 @@ This week: Torches and gelatinous cubes added to map generation, as well as visu
 
 <!--excerpt-->
 
+##Map Improvements
 First up this week, here is the progress made on spawning enemies on the map, as well as spawning torches on certain walls.
 ![Spawning Cubes](http://i.imgur.com/GGBFf72.gif)
 
 ![Spawning Torches](http://i.imgur.com/ziweZ21.gif)
 Torches really make the map look better
 
+##Visual Improvements
 As you may have noticed on the torch gifs, the camera is now bobbing up and down, and hands follow the camera a bit more smoothly.
 ![Bobbing](http://i.imgur.com/C3zdJFo.gif)
 
