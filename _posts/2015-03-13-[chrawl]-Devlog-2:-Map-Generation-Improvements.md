@@ -3,7 +3,7 @@ published: false
 ---
 
 ![Torches](http://i.imgur.com/ziweZ21.gif)
-This week: Torches and gelatinous cubes added to map generation, as well as Visual Improvements.
+This week: Torches and gelatinous cubes added to map generation, as well as visual improvements.
 <!--excerpt-->
 
 First up this week, here is the progress made on spawning enemies on the map, as well as spawning torches on certain walls.
