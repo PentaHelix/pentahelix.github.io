@@ -6,4 +6,4 @@ published: false
 - Scroll Model / UV 
 - Cube Splatter (img_1)
 - Stone NormalMap (img_2)
-- Tome/Scroll swapping
+- Basic Item Swapping
