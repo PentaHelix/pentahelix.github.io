@@ -4,10 +4,10 @@ layout: post
 ---
 
 ![Gelatinous Cube Exploding](http://i.imgur.com/T0NmZeZ.gif)
-A lot of progress was made this week, including switching between Scrolls and Tomes, pseudo-Deathanimations for gelatinous cubes, and improvements to stone walls.
+A lot of progress was made this week, including switching between Scrolls and Tomes, pseudo-deathanimations for gelatinous cubes, and improvements to stone walls.
 <!--excerpt-->
 
-First of all, here are the most visually impressing changes.
+First of all, here are a few visual changes.
 
 Gelationus Cubes now explode into a green hailstorm of jelly doom.
 ![Gelatinous Cube Exploding](http://i.imgur.com/T0NmZeZ.gif)
