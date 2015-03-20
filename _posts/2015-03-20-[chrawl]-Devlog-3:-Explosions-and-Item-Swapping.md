@@ -1,5 +1,6 @@
 ---
-published: false
+published: true
+layout:false
 ---
 
 ![Gelatinous Cube Exploding](http://i.imgur.com/T0NmZeZ.gif)
