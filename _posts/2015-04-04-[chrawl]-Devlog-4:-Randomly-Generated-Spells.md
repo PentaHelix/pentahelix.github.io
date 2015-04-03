@@ -17,7 +17,7 @@ The last two weeks were pretty productive. I got work done on many different thi
     - Potion Types (img2)
     
 - Map Generation
-    - Stairs
+    - Stairs (img4)
     
 - Enemies
 	- sword crawler (img3)
