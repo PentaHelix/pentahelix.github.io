@@ -12,6 +12,14 @@ As I mentioned a few posts ago, I am implementing a system to randomly generate 
 ![Spell Variety]()
 Some effects are also already working, piercing and homing among others.
 ![Homing Spell]()
+
+##Item Drops
+Gelatinous cubes now drop a random potion on death, in different shapes and colors. 
+![Potion Types]()
+Potions have no effect as of now, but I'm hoping you will be able to drink them in a week or two. 
+
+![Too many potions?]()
+Some bugs you just don't want to fix...
 ## Things done this week
 - Randomly Generated Spells
     - Visual Variation (img5)
