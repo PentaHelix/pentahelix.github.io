@@ -20,6 +20,11 @@ Potions have no effect as of now, but I'm hoping you will be able to drink them 
 
 ![Too many potions?]()
 Some bugs you just don't want to fix...
+
+##Map Generation
+I have worked a bit on map generation as well. Halls are now one level below passages, 
+
+
 ## Things done this week
 - Randomly Generated Spells
     - Visual Variation (img5)
