@@ -8,9 +8,9 @@ The last two weeks were pretty productive. I got work done on many different thi
 <!--excerpt-->
  
 ##Random Spells
-As I mentioned a few weeks ago, I am implementing a system to randomly generate spells. Right now, spells have random appearance and effects, e.g. color, size, trail, ... .
+As I mentioned a few weeks ago, all or most of the spells in chrawl will be randomly generated. Right now, spells have a randomly generated appearance(color, size, trail, ..).
 ![Spell Variety](http://i.imgur.com/bhLsTSn.gif)
-Some effects are also already working, piercing and homing among others.
+Some effects are already working as well, for example piercing and homing.
 ![Homing Spell](http://i.imgur.com/ABQcjop.gif)
 
 ##Item Drops
