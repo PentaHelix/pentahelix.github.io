@@ -20,4 +20,4 @@ The last two weeks were pretty productive. I got work done on many different thi
     - Stairs (img4)
     
 - Enemies
-	- sword crawler (img3)
+	- Sword Crawler (img3)
