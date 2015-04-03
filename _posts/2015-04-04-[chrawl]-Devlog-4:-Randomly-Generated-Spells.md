@@ -16,6 +16,8 @@ The last two weeks were pretty productive. I got work done on many different thi
     - Too many Potions? (img1)
     - Potion Types (img2)
     
-    
 - Map Generation
     - Stairs
+    
+- Enemies
+	- sword crawler
