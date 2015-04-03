@@ -8,7 +8,7 @@ The last two weeks were pretty productive. I got work done on many different thi
 <!--excerpt-->
  
 ##Random Spells
-As I mentioned a few posts ago, I am implementing a system to randomly generate spells. Right now, spells have random appearance and effects, e.g. color, size, trail, ... .
+As I mentioned a few weeks ago, I am implementing a system to randomly generate spells. Right now, spells have random appearance and effects, e.g. color, size, trail, ... .
 ![Spell Variety](http://i.imgur.com/bhLsTSn.gif)
 Some effects are also already working, piercing and homing among others.
 ![Homing Spell](http://i.imgur.com/ABQcjop.gif)
