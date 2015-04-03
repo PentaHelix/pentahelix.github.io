@@ -22,7 +22,8 @@ Potions have no effect as of now, but I'm hoping you will be able to drink them 
 Some bugs you just don't want to fix...
 
 ##Map Generation
-I have worked a bit on map generation as well. Halls are now one level below passages, 
+I have worked a bit on map generation as well. Halls are now one level below paths (random depth in the future), and stairs are placed to connect them.
+![Stairs]()
 
 
 ## Things done this week
