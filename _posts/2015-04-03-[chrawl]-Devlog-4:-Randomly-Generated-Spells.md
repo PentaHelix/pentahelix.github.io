@@ -5,6 +5,7 @@ layout: post
 
 ![Too many potions?](http://i.imgur.com/DlCmCXy.gif)
 The last two weeks were pretty productive. I got work done on many different things, including randomly generated spells, item drops, and extending map generation. 
+
 <!--excerpt-->
  
 ##Random Spells
