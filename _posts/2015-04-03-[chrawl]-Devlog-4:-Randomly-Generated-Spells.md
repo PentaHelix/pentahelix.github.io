@@ -32,18 +32,3 @@ He creeps me out a little bit.
 
 That's it for this week, I hope to see you next week!
 Have any questions, suggestions or comments? Feel free to leave a comment!
-
-## Things done this week
-- Randomly Generated Spells
-    - Visual Variation (img5)
-    - Homing (img6)
- 
-- Dropping Potions on enemy death
-    - Too many Potions? (img1)
-    - Potion Types (img2)
-    
-- Map Generation
-    - Stairs (img4)
-    
-- Enemies
-	- Sword Crawler (img3)
