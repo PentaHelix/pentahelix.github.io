@@ -3,22 +3,22 @@ published: false
 layout: post
 ---
 
-![Too many potions?]()
+![Too many potions?](http://i.imgur.com/DlCmCXy.gif)
 The last two weeks were pretty productive. I got work done on many different things, including randomly generated spells, item drops, and extending map generation. 
 <!--excerpt-->
  
 ##Random Spells
 As I mentioned a few posts ago, I am implementing a system to randomly generate spells. Right now, spells have random appearance and effects, e.g. color, size, trail, ... .
-![Spell Variety](http://i.imgur.com/bhLsTSn.gifv)
+![Spell Variety](http://i.imgur.com/bhLsTSn.gif)
 Some effects are also already working, piercing and homing among others.
-![Homing Spell](http://i.imgur.com/ABQcjop.gifv)
+![Homing Spell](http://i.imgur.com/ABQcjop.gif)
 
 ##Item Drops
 Gelatinous cubes now drop a random potion on death, in different shapes and colors. 
 ![Potion Types](http://i.imgur.com/fF0iLGF.png)
 Potions have no effect as of now, but I'm hoping you will be able to drink them in a week or two. 
 
-![Too many potions?](http://i.imgur.com/DlCmCXy.gifv)
+![Too many potions?](http://i.imgur.com/DlCmCXy.gif)
 Some bugs you just don't want to fix...
 
 ##Map Generation
