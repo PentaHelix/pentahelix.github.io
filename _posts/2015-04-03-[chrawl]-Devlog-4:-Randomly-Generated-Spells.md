@@ -3,9 +3,9 @@ published: false
 layout: post
 ---
 
- 
+[]()
+
 The last two weeks were pretty productive. I got work done on many different things, including randomly generated spells, item drops, and extending map generation. 
- 
 <!--excerpt-->
  
 ## Things done this week
