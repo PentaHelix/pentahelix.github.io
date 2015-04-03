@@ -16,6 +16,7 @@ Some effects are already working as well, for example piercing and homing.
 
 ##Item Drops
 Enemies now drop a potion when they die. Potions have a random color and different shapes.
+
 ![Potion Types](http://i.imgur.com/fF0iLGF.png)
 
 There are no effects for potions yet, but I'm hoping you will be able to drink them in a week or two. 
