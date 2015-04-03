@@ -10,25 +10,26 @@ The last two weeks were pretty productive. I got work done on many different thi
 ##Random Spells
 As I mentioned a few weeks ago, all or most of the spells in chrawl will be randomly generated. Right now, spells have a randomly generated appearance(color, size, trail, ..).
 ![Spell Variety](http://i.imgur.com/bhLsTSn.gif)
+
 Some effects are already working as well, for example piercing and homing.
 ![Homing Spell](http://i.imgur.com/ABQcjop.gif)
 
 ##Item Drops
-Gelatinous cubes now drop a random potion on death, in different shapes and colors. 
+Enemies now drop a potion on death. Potions have a random color and different shapes.
 ![Potion Types](http://i.imgur.com/fF0iLGF.png)
-Potions have no effect as of now, but I'm hoping you will be able to drink them in a week or two. 
 
+There are no effects for potions yet, but I'm hoping you will be able to drink them in a week or two. 
 ![Too many potions?](http://i.imgur.com/DlCmCXy.gif)
 Some bugs you just don't want to fix...
 
 ##Map Generation
-I have worked a bit on map generation as well. Halls are now one level below paths (random depth in the future), and stairs are placed to connect them.
+Maps are now a lot more interesting. Halls are one level below paths (random depth in the future), and stairs are placed to connect them.
 ![Stairs](http://i.imgur.com/PjqBeaZ.png)
 
 ##Enemies
-I just finished the rough model of a new enemy, currently named "Sword Crawler" (original, I know). 
+I just finished the rough model of a new enemy, currently named "Sword Crawler" (original, I know). It is a sword insect hybrid, which is not something you generally want to come across on your andventures.
 ![Sword Crawler](http://i.imgur.com/UPyaPQV.png)
-He creeps me out a little bit.
+He's pretty creepy.
 
-That's it for this week, I hope to see you next week!
-Have any questions, suggestions or comments? Feel free to leave a comment!
+That's it for this week, I hope to see you next time!
+Do you have any questions or suggestions? Feel free to leave a comment!
