@@ -21,4 +21,4 @@ I slightly changed spells to make individual "Spellecules" spread out in a horiz
 ![Spell Horizontal Spread]
 
 ##Misc
-The game is now migrated to Unity 5, I still need to port the Shader from IndieEffects to Unity ImageEffects tough.
+Chrawl is now migrated to Unity 5, I still need to port the Shader from IndieEffects to Unity ImageEffects tough.
