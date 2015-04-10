@@ -2,6 +2,4 @@
 published: false
 ---
 
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Not a lot to show this week, as I have been primarily cleaned up code and optimized some scripts, but one thing 
