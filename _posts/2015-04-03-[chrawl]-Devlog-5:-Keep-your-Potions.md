@@ -16,6 +16,8 @@ If you press and hold [LMB], you can charge up a throw.
 
 
 ##Spells
-I slightly changed spells to make individual "Spellecules" spread out in a horizontal line rather than a circle. I did this because aiming a spell was really hard
+I slightly changed spells to make individual "Spellecules" spread out in a horizontal line rather than a circle. I did this because aiming a spell was really hard when spellecules spread out AROUND your (imaginary) crosshair instead of actually where you pointed. 
+
+![Spell Horizonatl Spread]
 
 ##World Generation
