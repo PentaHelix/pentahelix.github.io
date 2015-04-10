@@ -2,7 +2,7 @@
 published: false
 ---
 
-![Potion Inventory]()
+![Potion Inventory](http://i.imgur.com/gypmOfx.gif)
 Not a lot to show this week, as I have been primarily cleaned up code and optimized some scripts, however potions do now have their own inventory system which I quite like the ui/ux of.
 
 <!--excerpt-->
