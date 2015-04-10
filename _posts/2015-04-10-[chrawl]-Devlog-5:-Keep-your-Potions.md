@@ -10,7 +10,7 @@ First of all you might notice that the game looks a bit more colorful now, this 
 
 ##Potions
 Only a few things to show this week, the first one being potion inventory. You can scroll through a list of all your potions with [Shift] + [Scroll], and Drop them with [LMB]. 
-![Dropping Potions]()
+![Dropping Potions](http://i.imgur.com/Y9x4QDC.gif)
 
 If you press and hold [LMB], you can charge up a throw.
 ![Throwing Potions](http://i.imgur.com/8wMCFQt.gif)
