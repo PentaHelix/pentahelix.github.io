@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ![Potion Inventory](http://i.imgur.com/gypmOfx.gif)
