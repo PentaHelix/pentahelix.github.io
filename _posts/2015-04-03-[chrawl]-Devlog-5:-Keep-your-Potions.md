@@ -14,3 +14,8 @@ Only a few things to show this week, the first one being potion inventory. You c
 If you press and hold [LMB], you can charge up a throw.
 ![Throwing Potions]()
 
+
+##Spells
+I slightly changed spells to make individual "Spellecules" spread out in a horizontal line rather than a circle. I did this because aiming a spell was really hard
+
+##World Generation
