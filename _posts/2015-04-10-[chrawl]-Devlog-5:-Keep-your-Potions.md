@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 
 ![Potion Inventory](http://i.imgur.com/gypmOfx.gif)
