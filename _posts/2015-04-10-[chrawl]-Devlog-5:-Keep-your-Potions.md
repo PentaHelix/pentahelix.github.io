@@ -13,7 +13,7 @@ Only a few things to show this week, the first one being potion inventory. You c
 ![Dropping Potions]()
 
 If you press and hold [LMB], you can charge up a throw.
-![Throwing Potions]()
+![Throwing Potions](http://i.imgur.com/8wMCFQt.gif)
 
 
 ##Spells
