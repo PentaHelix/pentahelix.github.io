@@ -19,7 +19,7 @@ If you press and hold [LMB], you can charge up a throw.
 ##Spells
 I slightly changed spells to make individual "Spellecules" spread out in a horizontal line rather than a circle. I did this because aiming a spell was really hard when spellecules spread out AROUND your (imaginary) crosshair instead of actually where you pointed. 
 
-![Spell Horizontal Spread]()
+![Spell Horizontal Spread](http://i.imgur.com/MYggTP1.gif)
 
 ##Misc
 Chrawl is now migrated to Unity 5, I still need to port the Shader from IndieEffects to Unity ImageEffects tough.
