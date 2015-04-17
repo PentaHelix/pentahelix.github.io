@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 
 ![Pocketwatch](http://i.imgur.com/o8Lb9TI.gif)
