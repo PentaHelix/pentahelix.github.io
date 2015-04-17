@@ -15,4 +15,6 @@ I am still working on optimizing code, and getting some basic game design done. 
 The magic system is going to need some reworking as well, however the core functionality will stay the same.
 
 #Team
-Yesterday, I posted on /r/inat in search for some sound designers and 3d artists. I got a few responses mostly from sound designers, so perhaps the game will have some sound. I am still looking for 1 or two 3d artists who are willing to help on a rev-share model. If you are that person, email me at jakkuen@gmail.com
+Yesterday, I posted on /r/inat in search for some sound designers and 3d artists. I got a few responses mostly from sound designers, so perhaps the game will have some sound. I am still looking for 1 or two 3d artists who are willing to help on a rev-share model. If you are that person, email me at jakkuen@gmail.com.
+
+
