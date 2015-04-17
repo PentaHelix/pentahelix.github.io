@@ -15,4 +15,4 @@ I am still working on optimizing code, and getting some basic game design done. 
 The magic system is going to need some reworking as well, however the core functionality will stay the same.
 
 #Team
-Yesterday, I posted on /r/inat in search for some sound artists
+Yesterday, I posted on /r/inat in search for some sound artists and 3d artists.
