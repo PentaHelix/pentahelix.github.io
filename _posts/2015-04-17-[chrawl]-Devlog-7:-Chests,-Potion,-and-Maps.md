@@ -2,6 +2,8 @@
 published: false
 ---
 
-## A New Post
+## Things done this week
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Minimap (img1)
+Chests
+Potion Effects
