@@ -7,3 +7,4 @@ published: false
 Minimap (img1)
 Chests
 Potion Effects
+Runes
