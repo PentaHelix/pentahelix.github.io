@@ -2,7 +2,7 @@
 published: false
 ---
 
-![]()
+![Minimap]()
 Finally had a productive week again, chests are now in-game, alongside drinking Potions and a Minimap.
 
 <!--excerpt-->
