@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 
 ![Minimap](http://i.imgur.com/G1xguNd.png)
