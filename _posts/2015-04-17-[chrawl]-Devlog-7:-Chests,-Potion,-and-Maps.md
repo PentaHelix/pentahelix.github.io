@@ -3,7 +3,7 @@ published: false
 ---
 
 ![]()
-Finally had a productive week again, chests are now in-game, alongside drinking Potions and M<inimaps.
+Finally had a productive week again, chests are now in-game, alongside drinking Potions and Minimaps.
 
 ## Things done this week
 
