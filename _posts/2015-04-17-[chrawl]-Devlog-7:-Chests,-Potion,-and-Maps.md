@@ -10,5 +10,6 @@ Chests are now in Chrawl. They simply open when you look at them, and can contai
 ![]()
 
 ##Potions
-
+Some Potions now have certain effects when you drink them. This is the Potion Of Frost's effect:
+![]();
 ##Minimap
