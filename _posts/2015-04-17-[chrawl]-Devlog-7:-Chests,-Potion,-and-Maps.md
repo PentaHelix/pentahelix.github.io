@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ![Minimap](http://i.imgur.com/G1xguNd.png)
