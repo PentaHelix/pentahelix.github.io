@@ -3,7 +3,7 @@ published: false
 ---
 
 ![Minimap](http://i.imgur.com/G1xguNd.png)
-I finally had time to get a lot done on chrawl this week. Chests are now in-game, alongside drinking Potions and a Minimap.
+I finally had time to get a lot done on chrawl this week. Chests are now working, alongside drinking Potions and a Minimap.
 
 <!--excerpt-->
 
