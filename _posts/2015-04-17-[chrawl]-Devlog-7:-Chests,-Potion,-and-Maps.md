@@ -11,7 +11,3 @@ I started implementing chests. Right now they simply open when you look at them.
 ##Potions
 
 ##Minimap
-Minimap (img1)
-Chests
-Potion Effects
-Runes
