@@ -9,13 +9,13 @@ I worked a lot on runes this week, as well as implementing them in Tome generati
 
 ##Runes
 
-![Runes]()
+![Runes](http://i.imgur.com/rT0LfB8.png)
 
 Here are a few of the runes I made this week. Each runes has a meaning and name, so you will eventually be able to read them.
 I plan on designing en entire rune alphabet, and maybe letting players write their own tomes.
 
 
-![Tome]()
+![Tome](http://i.imgur.com/X3UIAj7.png)
 
 Right now, the four runes on a tome represent:
 
