@@ -15,6 +15,7 @@ Here are a few of the runes I made this week. Each runes has a meaning and name,
 I plan on designing en entire rune alphabet, and maybe letting players write their own tomes.
 
 
+1[]()
 
 Right now, the four runes on a tome represent:
 
