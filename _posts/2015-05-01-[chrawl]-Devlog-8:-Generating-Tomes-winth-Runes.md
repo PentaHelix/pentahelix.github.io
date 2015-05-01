@@ -24,4 +24,7 @@ Right now, the four runes on a tome represent:
 
 3. Number of Projectiles: Pretty straight-forward, how many orbs does the Spell create.
 
-4.
+4. Special Modifier: Powerful Runes, that make the Spell Homing, Piercing, Chaining, ... 
+.
+
+##
