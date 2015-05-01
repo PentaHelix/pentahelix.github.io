@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 
 ![Runes](http://i.imgur.com/rT0LfB8.png)
