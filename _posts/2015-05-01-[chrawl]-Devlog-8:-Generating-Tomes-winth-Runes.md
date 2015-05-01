@@ -18,7 +18,7 @@ I plan on designing en entire rune alphabet, and maybe letting players write the
 
 Right now, the four runes on a tome represent:
 
-1. Effectiveness Type: Which kinds of enemies does this spell do more damage to, and which less.
+1. Effectiveness Type: Which kinds of enemies does this spell do more/less damage to.
 
 2. Elemental Damage: Burning, Freezing, Stunning, ... .
 
@@ -28,3 +28,5 @@ Right now, the four runes on a tome represent:
 .
 
 ##
+
+This week, I plan to complete Tomes Generation, and then maybe work on map generation a bit. 
