@@ -2,7 +2,7 @@
 published: false
 ---
 
-![?]()
+![Runes](http://i.imgur.com/rT0LfB8.png)
 I worked a lot on runes this week, as well as implementing them in Tome generation.
 
 <!--excerpt-->
@@ -29,4 +29,4 @@ Right now, the four runes on a tome represent:
 .
 
 
-This week, I plan to complete Tome Generation, and then maybe work on Map generation a bit. 
+This week, I plan to complete Tome generation, and then maybe work on Map generation a bit. 
