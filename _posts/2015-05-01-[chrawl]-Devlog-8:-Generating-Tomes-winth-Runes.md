@@ -4,6 +4,7 @@ layout: post
 ---
 
 ![Runes](http://i.imgur.com/rT0LfB8.png)
+
 I worked a lot on runes this week, as well as implementing them in Tome generation.
 
 <!--excerpt-->
