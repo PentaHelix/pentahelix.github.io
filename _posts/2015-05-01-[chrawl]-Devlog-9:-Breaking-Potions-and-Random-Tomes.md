@@ -15,5 +15,6 @@ I've just added a feature that displays the runes present on a tome when you loo
 Tomes are now randomly generated, however some runes are more uncommon than others.
 
 #Chests
-Chest now spawn in the map. Chest contain either a potion, a tome, 
+Chest now spawn in the map. Chest will contain tomes, potions, daggers, ... .
+![Chests]()
 
