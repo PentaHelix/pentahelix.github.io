@@ -3,7 +3,7 @@ published: false
 ---
 
 
-![Shattering Potion]()
+![Shattering Potion](http://i.imgur.com/DSARZ4U.gif)
 Potions shatter on surfaces now, as well as some cool additions to Tomes.
 
 <!--excerpt-->
@@ -17,9 +17,9 @@ Tomes are now randomly generated, however some runes are more uncommon than othe
 
 #Chests
 Chest now spawn in the map. Chest will contain tomes, potions, daggers, ... .
-![Chests]()
+![Chests](http://i.imgur.com/mG6KAMy.gif)
 
 #Potions
 Potions shatter now When you throw them against a wall or an enemy. This may cause various effects 
 
-![Shattering Potion]()
+![Shattering Potion](http://i.imgur.com/DSARZ4U.gif)
