@@ -21,3 +21,5 @@ Chest now spawn in the map. Chest will contain tomes, potions, daggers, ... .
 #Potions
 Potions shatter now When you throw them against a wall or an enemy. This may cause various effects 
 
+![Shattering Potion]()
+
