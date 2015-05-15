@@ -2,6 +2,7 @@
 published: false
 ---
 
+
 ![Shattering Potion]()
 Potions shatter on surfaces now, as well as some cool additions to Tomes.
 
@@ -10,7 +11,7 @@ Potions shatter on surfaces now, as well as some cool additions to Tomes.
 #Tomes
 I've just added a feature that displays the runes present on a tome when you look at them. This is necessary if the tome is too far away to discern individual runes.
 
-![Rune Display]()
+![Rune Display](http://i.imgur.com/ixlIf5e.gif)
 
 Tomes are now randomly generated, however some runes are more uncommon than others.
 
@@ -22,4 +23,3 @@ Chest now spawn in the map. Chest will contain tomes, potions, daggers, ... .
 Potions shatter now When you throw them against a wall or an enemy. This may cause various effects 
 
 ![Shattering Potion]()
-
