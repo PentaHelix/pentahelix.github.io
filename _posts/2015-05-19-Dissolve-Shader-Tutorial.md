@@ -6,6 +6,6 @@ published: false
 2. Paint.net
 	1. Oil Painting
     2. Duplicate Layer
-    3. Drag Green/Blue Curve Down
-    4. Drag Red Up
+    3. Layer 1: Drag Green/Blue Curve Down
+    4. Layer 2: Drag Red/Blue Curve Down
     
