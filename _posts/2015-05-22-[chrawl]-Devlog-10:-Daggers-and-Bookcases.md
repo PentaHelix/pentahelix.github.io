@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 
 ![Dagger](http://i.imgur.com/jwsb9IJ.png)
