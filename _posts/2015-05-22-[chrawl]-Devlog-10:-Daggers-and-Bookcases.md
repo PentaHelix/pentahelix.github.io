@@ -17,4 +17,5 @@ Finally got some daggers in-game. They are pretty self-explanatory, you hit thin
 
 ##Map Generation
 I'm trying to make the world a bit more engaging, so I'm starting to add some furnishing into the dungeon. For now, there are some Bookcases without any functionality, however the book texture generates randomly so there's somethin I guess :) .
-![Bookcase]()
+
+![Bookcases](http://i.imgur.com/IBVT7JG.png)
