@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ![Dagger](http://i.imgur.com/jwsb9IJ.png)
