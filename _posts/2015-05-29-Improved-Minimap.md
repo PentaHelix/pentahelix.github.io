@@ -2,7 +2,7 @@
 published: false
 ---
 
-![]()
+![Minimap]()
 
 <!--excerpt>
 
