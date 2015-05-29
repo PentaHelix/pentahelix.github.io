@@ -13,6 +13,10 @@ The minimap is now permanently in the top right corner. When you start a game on
 ![Minimap]()
 
 ##Spells
-Spell now glow, which makes for some cool visuals
+Spells now glow, which makes for some cool visuals.
 
 ![Spell Glow]()
+
+##Health
+You can now look at your Pocketwatch, which will eventually indicate things like Mana.
+![Pockketwatch]()
