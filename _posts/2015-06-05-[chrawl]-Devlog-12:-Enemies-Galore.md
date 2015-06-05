@@ -15,3 +15,6 @@ After only having the gelatinous cubes in the game, I finally implemented a new 
 ![Pseudo Jumpscare]()
 
 ##Potions
+I added effects for some potions, mainly the potion of burning and the potion of healing.
+
+![Potion Effects]()
