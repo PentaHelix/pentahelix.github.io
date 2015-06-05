@@ -6,12 +6,13 @@ published: true
 
 
 <div class="posts">
-  {% for i in 0...4 %}
+  {% for post in site.posts limit:5 %}
     <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ site.posts[i].title }}</a></h1>
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ site.posts.excerpt }}
+        {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
