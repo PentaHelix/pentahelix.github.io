@@ -20,3 +20,5 @@ I also worked on another new enemie, he's got his eye on you. But more on him ne
 I added effects for some potions, mainly the potion of burning and the potion of healing.
 
 ![Potion Effects](http://i.imgur.com/LrS498l.gif)
+
+Hope to see you next week!
