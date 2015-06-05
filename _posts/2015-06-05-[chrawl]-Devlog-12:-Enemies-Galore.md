@@ -3,7 +3,7 @@ published: false
 ---
 
 
-![Culutist]()
+![Cultist]()
 
 Finally got around to adding some new Enemies;
 
