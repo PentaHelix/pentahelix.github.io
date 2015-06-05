@@ -6,7 +6,7 @@ published: true
 
 
 <div class="posts">
-  {% for i in [0,1,2,3,4] %}
+  {% for i in 0...4 %}
     <article class="post">
 		i
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ site.posts[i].title }}</a></h1>
