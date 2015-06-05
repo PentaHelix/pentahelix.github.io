@@ -18,7 +18,6 @@ avatar: http://googledrive.com/host/0B2xTN1nKxr-pfmFSWEdXQWt2eXQza0c2SlhsV1p5aFl
 # Includes an icon in the footer for each username you enter
 
 paginate: 5
-paginate_path: "/page:num/"
 
 footer-links:
   dribbble:
