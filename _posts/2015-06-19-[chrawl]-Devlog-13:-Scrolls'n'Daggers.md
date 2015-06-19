@@ -4,13 +4,13 @@ layout: post
 ---
 
 
-![Dagger]()
+![Dagger](http://i.imgur.com/Uu6gQAR.gif)
 Hit your foes with a flurry of blows, wow that just rhymed out of nowhere.
 
 <!--excerpt-->
 
 ##Daggers
-![Dagger]()
+![Dagger](http://i.imgur.com/Uu6gQAR.gif)
 
 Daggers are still very eary in development, however I do have some plans for how they will work in the game. A simple dagger isn't much of a weapon whan you have spells in your arsenal. However, enchanting them with Tomes and infusing them with their magical properties will allow you to create powerful daggers.
 
