@@ -20,3 +20,5 @@ I finally started working on the scroll rework. Here's some info:
 >Scrolls play an important role in chrawl, as they are the primary source of non-		offensive magic. Scrolls will be randomly generated to some degree, similar to how 		Tomes are generated. Scrolls are a scarcity in chrawl, and are subsequently of very high value.
  
  - [chrawl Design Doc]
+ 
+Some scrolls will of course have offensive capabilities, however you will find that scrolls allow you to do much more interesting things like Cloaking yourself, pushing Enemies away from yourself, or even bend space and time.
