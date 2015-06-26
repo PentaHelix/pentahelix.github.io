@@ -14,4 +14,4 @@ Mana is finally implemented, visible on the pocketwatch.
 ![Scroll]()
 Some more details on scrolls:
 
->Scrolls are inscribed with two runes that specify the consequences of casting the scroll. Both Effects(Runes) are instantly activated when the scroll is cast.
+>Scrolls are inscribed with two runes that specify the effect of casting the scroll. Both Effects(Runes) are instantly activated when the scroll is cast. 
