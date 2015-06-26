@@ -3,7 +3,7 @@ published: false
 ---
 
 
-
+!{}
 <!--excerpt-->
 
 ##Magic
