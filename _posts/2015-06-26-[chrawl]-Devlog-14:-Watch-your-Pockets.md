@@ -8,4 +8,4 @@ published: false
 
 ##Magic
 Mana is finally implemented, visible on the pocketwatch.
-![]()
+![Mana]()
