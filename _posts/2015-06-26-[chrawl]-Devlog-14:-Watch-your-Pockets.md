@@ -3,7 +3,7 @@ published: false
 ---
 
 
-  ![
+![Mana Switch]()
 <!--excerpt-->
 
 ##Magic
