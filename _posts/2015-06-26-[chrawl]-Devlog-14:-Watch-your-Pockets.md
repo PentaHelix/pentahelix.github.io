@@ -4,7 +4,8 @@ layout: post
 ---
 
 
-![Mana Switching]()
+
+![Mana Switching](http://i.imgur.com/M6VT0X6.gif)
 Mana was a much needed addition to the magic system.
 <!--excerpt-->
 
