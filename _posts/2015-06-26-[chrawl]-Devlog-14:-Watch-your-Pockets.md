@@ -4,7 +4,7 @@ published: false
 
 
 ![Mana Switching]()
-Mana system was a much needed addition to the magic system.
+Mana was a much needed addition to the magic system.
 <!--excerpt-->
 
 ##Magic
