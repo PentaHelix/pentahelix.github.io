@@ -20,4 +20,4 @@ Inferno:
 
 
 Blizzard:
-![]()
+![Blizzard]()
