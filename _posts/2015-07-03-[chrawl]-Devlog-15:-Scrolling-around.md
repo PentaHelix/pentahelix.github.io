@@ -14,8 +14,8 @@ Here are a few:
 Ice Shield:
 ![Ice Shield]()
 
-
-![]
+Inferno
+![Inferno]
 
 Blizzard:
 ![]()
