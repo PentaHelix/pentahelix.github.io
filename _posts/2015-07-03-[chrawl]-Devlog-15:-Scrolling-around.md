@@ -15,7 +15,7 @@ Ice Shield:
 ![Ice Shield]()
 
 Inferno
-![Inferno]
+![Inferno]()
 
 Blizzard:
 ![]()
