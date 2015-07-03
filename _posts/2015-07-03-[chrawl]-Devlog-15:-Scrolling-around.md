@@ -12,4 +12,10 @@ Scrolls are working now, and there are already a lot of powerful spellsw you can
 Here are a few:
 
 Ice Shield:
+![Ice Shield]()
+
+
+![]
+
+Blizzard:
 ![]()
