@@ -22,3 +22,6 @@ Inferno:
 Blizzard:
 ![Blizzard]()
 
+A lot of them are still very bare-bone, they will look a lot more impressive once they are done.
+
+
