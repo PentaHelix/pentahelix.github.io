@@ -15,7 +15,7 @@ My main focus this week was to make the game look better. The most obvious chang
 ![Wall variatons]()
 
 Additionally, some rooms now spawn flooded with water(which doesn't do anything yet):
-![Water]()
+![Water](http://i.imgur.com/LwREuJj.gif)
 
 Finally, there are now some random decorational elements like stones or graves:
 ![Stones]()
