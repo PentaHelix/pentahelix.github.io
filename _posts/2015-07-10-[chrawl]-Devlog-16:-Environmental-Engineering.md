@@ -11,8 +11,8 @@ Finally a big update!
 My main focus this week was to make the game look better. The most obvious changes are new Wall and floor tiles,
 ![New Tiles]()
 (which also have some variations)
-![Furnace]
-![Wall variatons]
+![Furnace]()
+![Wall variatons]()
 
 ##ASCII Effect
 I tweaked the ASCII Effect to be less confusing by slightly increasing the resolution, as well as adjusting the backdrop darkness for the characters.
