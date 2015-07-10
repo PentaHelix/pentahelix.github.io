@@ -18,7 +18,7 @@ Additionally, some rooms now spawn flooded with water(which doesn't do anything 
 ![Water](http://i.imgur.com/LwREuJj.gif)
 
 Finally, there are now some random decorational elements like stones or graves:
-![Stones]()
+![Stones](http://i.imgur.com/iorGOnO.gif)
 ![Graves]()
 
 ##ASCII Effect
