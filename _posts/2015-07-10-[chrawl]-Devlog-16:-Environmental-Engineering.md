@@ -3,11 +3,12 @@ published: false
 ---
 
 ![Furnace]()
-
+Finally a big update!
 <!--excerpt-->
 
 ##Environment
-My main focus this week was to make the game look better. The most obvious changes 
+My main focus this week was to make the game look better. The most obvious changes are new Wall and floor tiles,
+![New Tiles]()
 
 ##ASCII Effect
 I tweaked the ASCII Effect to be less confusing by slightly increasing the resolution, as well as adjusting the backdrop darkness for the characters.
