@@ -11,7 +11,7 @@ Finally a big update!
 <!--excerpt-->
 
 ##Environment
-My main focus this week was to make the game look better. The most obvious changes are new Wall and Floor tiles,
+My main focus this week was to make the game look better. The most obvious changes are new Wall and floor tiles,
 ![New Tiles](http://i.imgur.com/8bHyB79.gif)
 (which also have some variations)
 ![Furnace](http://i.imgur.com/MnSh4sL.gif)
