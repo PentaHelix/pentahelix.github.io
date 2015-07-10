@@ -12,7 +12,7 @@ My main focus this week was to make the game look better. The most obvious chang
 ![New Tiles](http://i.imgur.com/8bHyB79.gif)
 (which also have some variations)
 ![Furnace](http://i.imgur.com/MnSh4sL.gif)
-![Wall variatons]()
+![Wall variatons](http://i.imgur.com/KeBnAyy.png)
 
 Additionally, some rooms now spawn flooded with water(which doesn't do anything yet):
 ![Water](http://i.imgur.com/LwREuJj.gif)
