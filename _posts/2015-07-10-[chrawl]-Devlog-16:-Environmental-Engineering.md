@@ -9,7 +9,7 @@ Finally a big update!
 
 ##Environment
 My main focus this week was to make the game look better. The most obvious changes are new Wall and floor tiles,
-![New Tiles]()
+![New Tiles](http://i.imgur.com/8bHyB79.gif)
 (which also have some variations)
 ![Furnace]()
 ![Wall variatons]()
