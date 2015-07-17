@@ -1,5 +1,6 @@
 ---
 published: false
+layout: post
 ---
 
 ![Pedestal](http://i.imgur.com/gBLQsoK.gif)
