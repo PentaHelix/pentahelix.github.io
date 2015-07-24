@@ -3,7 +3,7 @@ published: false
 ---
 
 Groundbreaking hinge technology has lead us to this: doors.
-![]()
+![Doorway]()
 
 <!--excerpt-->
 
@@ -14,11 +14,11 @@ The Environment is finally a bit more 3-dimensional, rooms and hallways have ran
 
 You also might have noticed some doorways in that gif.
 
-![]()
+![Doorway]()
 
 You can also descend and ascend between different floors in the dungonen now. 
 
-![]()
+![Ladder]()
 
 You can see it's not very polished right now, but I'm currently working on creating different floorsets for the dungeon.
     
