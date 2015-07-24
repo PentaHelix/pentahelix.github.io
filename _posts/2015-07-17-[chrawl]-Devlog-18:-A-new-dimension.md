@@ -1,5 +1,6 @@
 ---
-published: false
+published: true
+layout: post
 ---
 
 Groundbreaking hinge technology has lead us to this: doors.
