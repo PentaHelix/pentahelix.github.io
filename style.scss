@@ -40,10 +40,9 @@ body {
     height: 213px;
     display: inline-block;
     margin: 5px;
-    transition: -webkit-filter;
 }
 
-.image:hover{
+.imageOverlay:hover{
 	-webkit-filter: sepia(90%) hue-rotate(90deg);
 }
 
