@@ -43,7 +43,7 @@ body {
 }
 
 .imageOverlay:hover{
-	-webkit-filter: sepia(90%) hue-rotate(90deg);
+	opacity: 0.4; 
 }
 
 img{
