@@ -40,11 +40,11 @@ body {
     height: 213px;
     display: inline-block;
     margin: 5px;
-    transition: height 0.1s;
+    transition: -webkit-filter;
 }
 
 .image:hover{
-	height:230px;
+	-webkit-filter: sepia(90%) hue-rotate(90deg);
 }
 
 img{
