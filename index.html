@@ -22,7 +22,7 @@ published: true
     {% else %}
     <video autoplay="autoplay" loop="loop" poster="{{img.link}}.jpg" preload="auto"><source src="{{img.link}}.webm" type="video/webm"></video>
     {% endif %}
-    	<div class="imageOverlay"></div>
+    <div class="imageOverlay"><p>{{img.title}}</p></div>
   </article>
   {% endfor %}
 </div>
