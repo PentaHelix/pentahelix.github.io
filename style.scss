@@ -30,6 +30,11 @@ body {
   width: 100%;
 }
 
+.images{
+    line-height: 0;
+    font-size: 0;
+}
+
 .image {
 	width: calc(50% - 11px);
     display: inline-block;
@@ -38,11 +43,6 @@ body {
 
 img{
 	vertical-align: middle;
-}
-
-.images{
-    line-height: 0;
-    font-size: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
