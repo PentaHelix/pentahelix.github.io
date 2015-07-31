@@ -4,11 +4,11 @@ title: chrawl Devlog
 published: true
 ---
 
-<h1>New on the blog:</h1>
+<h1>New on the blog:</h>
 <div class="blogPreview">
   {% for post in site.posts limit:3 %}
 	<article class="postPreview">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
     </article>
   {%endfor%}
 </div>
