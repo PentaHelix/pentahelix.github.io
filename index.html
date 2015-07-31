@@ -10,7 +10,7 @@ published: true
     {% if img.type=="image" %}
     	<img src="{{img.link}}" alt="{{img.title}}">
     {% else %}
-   		<video autoplay="autoplay"></video>
+   		<video autoplay="autoplay"><source src="{{img.link}}"></video>
     {% endif %}
     	<div class="imageOverlay"></div>
   </article>
