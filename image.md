@@ -1,8 +1,13 @@
 ---
 layout: page
-permalink: /image/:num/
+permalink: "/image/:num/"
 published: true
 ---
+
+<script>
+	
+</script>
+
 
 <div class="posts">
     <article class="post">
@@ -14,4 +19,3 @@ published: true
     	{% endif %}
     </article>
 </div>
-
