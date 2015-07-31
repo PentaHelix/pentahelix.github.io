@@ -26,5 +26,6 @@ published: true
     {% endif %}
     <a href="/image/?id={{}}"><div class="imageOverlay"><p>{{img.title}}</p></div></a>
   </article>
+  {% assign i = i | plsu: 1 %}
   {% endfor %}
 </div>
