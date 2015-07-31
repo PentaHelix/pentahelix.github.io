@@ -5,6 +5,7 @@ published: true
 ---
 
 <script>
+	var imgs = [];
 	{{for img in site.data.images }}
     	
     {{ endfor }}
