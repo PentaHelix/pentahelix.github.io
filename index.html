@@ -24,7 +24,7 @@ published: true
     {% else %}
     <video autoplay="autoplay" loop="loop" poster="{{img.link}}.jpg" preload="auto"><source src="{{img.link}}.webm" type="video/webm"></video>
     {% endif %}
-    <a href="/image/?id={{}}"><div class="imageOverlay"><p>{{i}}</p></div></a>
+    <a href="/image/?id={{i}}"><div class="imageOverlay"><p>{{img.title}}</p></div></a>
   </article>
   {% assign i = i | plus: 1 %}
   {% endfor %}
