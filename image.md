@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /image:num/
+permalink: /image/:num/
 published: true
 ---
 
