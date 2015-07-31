@@ -1,20 +1,20 @@
 ---
 layout: page
-permalink: /todo/
+permalink: /devlog/
 published: true
 ---
 
-#To-Do 
-##chrawl
-- Magic System
-- Camera Improvements
-	- ~~Bobbing~~
-    - ~~Smooth Hand Follow~~
-- Map Generation
-	- ~~Generating Gelationus Cubes~~
-    - Generating Torches
-    - Fixing disconnected Rooms
-    
-    
-##Side Projects
-- Random Chance Visualisation
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
