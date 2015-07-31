@@ -7,7 +7,8 @@ published: true
 <div class="images">
   {% for img in site.data.img %}
   <article class="image">
-    <img src="{{img.link}}" alt="{{img.title}}">
+    {% if img.type=="image" %}
+    	<img src="{{img.link}}" alt="{{img.title}}">
     <div class="imageOverlay"></div>
   </article>
   {% endfor %}
