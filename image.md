@@ -16,7 +16,7 @@ published: true
     <article id="imageDisplay">
     	<script>
         	var img = location.search.split('id=')[1];
-            document.print("<p>"+imgs[img][2]+"<p/>");
+            document.write("<p>"+imgs[img][2]+"<p/>");
             if(imgs[img][1] == "video"){
             	document.write("<video autoplay='autoplay' loop='loop' poster='"+imgs[img][0]+".jpg' preload='auto'><source src='"+imgs[img][0]+".webm' type='video/webm'></video>");
             }else{
