@@ -39,7 +39,8 @@ body {
 	width: calc(50% - 10px);
     height: 213px;
     display: inline-block;
-    margin: 5px; 
+    margin: 5px;
+    transition: height 0.1s;
 }
 
 .image:hover{
