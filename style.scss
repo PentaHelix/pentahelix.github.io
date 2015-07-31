@@ -55,6 +55,12 @@ body {
     left: 0;
 }
 
+.imageOverlay p {
+	color: #FFF;
+    font-size: 20px;
+    padding-left: 6px;
+}
+
 .imageOverlay:hover{
 	opacity: 0.6; 
 }
