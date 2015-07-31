@@ -7,7 +7,7 @@ published: true
 <div class="blogPreview">
   {% for post in site.posts limit:3 %}
 	<article class="post">
-      <h1><a href="{{ site.baseurl }}{{ site.posts[0].url }}">{{ site.posts[0].title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ site.posts[0].url }}">{{ pos.title }}</a></h1>
     </article>
   {%endfor%}
 </div>
