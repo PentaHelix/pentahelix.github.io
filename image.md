@@ -19,7 +19,7 @@ published: true
             if(imgs[img][1] == "video"){
             	document.getElementById("imageDisplay").innerHTML = "<video autoplay='autoplay' loop='loop' poster='{{img.link}}.jpg' preload='auto'><source src='{{img.link}}.webm' type='video/webm'></video>";
             }else{
-    			<img src="{{img.link}}.png" alt="{{img.title}}">
+    			document.getElementById("imageDisplay").innerHTML = "<img src='{{img.link}}.png' alt='{{img.title}}'>;
             }
         </script>
     </article>
