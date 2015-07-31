@@ -9,9 +9,9 @@ published: true
   {% for img in site.data.img %}
   <article class="image">
     {% if img.type == "image" %}
-    	<img src="{{img.link}}" alt="{{img.title}}">
+    	<img src="{{img.link}}" alt="{{img.title}}.png">
     {% else %}
-    <video autoplay="autoplay" loop="loop"><source src="{{img.link}}" type="video/webm"></video>
+    <video autoplay="autoplay" loop="loop"><source src="{{img.link}}.webm" type="video/webm"></video>
     {% endif %}
     	<div class="imageOverlay"></div>
   </article>
