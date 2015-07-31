@@ -17,7 +17,7 @@ published: true
     	<script>
         	var img = location.search.split('id=')[1];
             if(imgs[img][1] == "video"){
-            	<video autoplay="autoplay" loop="loop" poster="{{img.link}}.jpg" preload="auto"><source src="{{img.link}}.webm" type="video/webm"></video>
+            	document.getElementById("imageDisplay").innerHTML = "<video autoplay='autoplay' loop='loop' poster='{{img.link}}.jpg' preload='auto'><source src='{{img.link}}.webm' type='video/webm'></video>";
             }else{
     			<img src="{{img.link}}.png" alt="{{img.title}}">
             }
