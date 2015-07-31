@@ -11,7 +11,7 @@ published: true
     {% if img.type == "image" %}
     	<img src="{{img.link}}" alt="{{img.title}}.png">
     {% else %}
-    <video autoplay="autoplay" loop="loop" poster="{{img.link}}.jpg"><source src="{{img.link}}.webm" type="video/webm"></video>
+    <video autoplay="autoplay" loop="loop" poster="{{img.link}}.jpg" preload="auto"><source src="{{img.link}}.webm" type="video/webm"></video>
     {% endif %}
     	<div class="imageOverlay"></div>
   </article>
