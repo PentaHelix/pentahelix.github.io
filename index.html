@@ -5,6 +5,7 @@ published: true
 ---
 
 
+
 <div class="blogPreview">
   <h1>New on the blog:</h1>
   {% for post in site.posts limit:3 %}
@@ -15,6 +16,7 @@ published: true
 </div>
 
 <div class="images">
+  {% assign i = 0 %}
   {% for img in site.data.img %}
   <article class="image">
     {% if img.type == "image" %}
@@ -22,7 +24,7 @@ published: true
     {% else %}
     <video autoplay="autoplay" loop="loop" poster="{{img.link}}.jpg" preload="auto"><source src="{{img.link}}.webm" type="video/webm"></video>
     {% endif %}
-    <div class="imageOverlay"><p>{{img.title}}</p></div>
+    <a href="/image/?id={{}}"><div class="imageOverlay"><p>{{img.title}}</p></div></a>
   </article>
   {% endfor %}
 </div>
