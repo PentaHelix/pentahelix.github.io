@@ -17,9 +17,9 @@ published: true
     	<script>
         	var img = location.search.split('id=')[1];
             if(imgs[img][1] == "video"){
-            	document.getElementById("imageDisplay").innerHTML = "<video autoplay='autoplay' loop='loop' poster='{{img.link}}.jpg' preload='auto'><source src='{{img.link}}.webm' type='video/webm'></video>";
+            	document.write("<video autoplay='autoplay' loop='loop' poster='.jpg' preload='auto'><source src='.webm' type='video/webm'></video>");
             }else{
-    			document.getElementById("imageDisplay").innerHTML = "<img src='{{img.link}}.png' alt='{{img.title}}'>;
+    			document.write("<img src='.png' alt=''>");
             }
         </script>
     </article>
