@@ -24,4 +24,5 @@ published: true
             }
         </script>
     </article>
+    {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </div>
