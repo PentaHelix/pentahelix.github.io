@@ -5,7 +5,9 @@ published: true
 ---
 
 <script>
-	
+	{{for img in site.data.images }}
+    
+    {{ endfor}}
 </script>
 
 
