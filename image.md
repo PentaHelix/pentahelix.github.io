@@ -7,7 +7,7 @@ published: true
 <script>
 	var imgs = [];
 	{% for img in site.data.img %}
-    	imgs.push(['{{img.link}}', '{{img.type}}']);
+    	imgs.push(['{{img.link}}', '{{img.type}}', '{{img.title}}']);
     {% endfor %}
 </script>
 
