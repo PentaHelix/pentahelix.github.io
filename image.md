@@ -13,7 +13,7 @@ published: true
 
 
 <div class="posts">
-    <article class="imageDisplay">
+    <article id="imageDisplay">
     	<script>
         	var img = location.search.split('id=')[1];
             if(imgs[img][1] == "video"){
