@@ -9,7 +9,10 @@ published: true
   <article class="image">
     {% if img.type=="image" %}
     	<img src="{{img.link}}" alt="{{img.title}}">
-    <div class="imageOverlay"></div>
+    {% else %}
+    	<img src="{{img.link}}" alt="{{img.title}}">
+    {% ednif %}
+    	<div class="imageOverlay"></div>
   </article>
   {% endfor %}
 </div>
