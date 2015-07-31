@@ -4,6 +4,7 @@ permalink: /image/
 published: true
 ---
 
+
 <script>
 	var imgs = [];
 	{% for img in site.data.img %}
@@ -24,5 +25,6 @@ published: true
             }
         </script>
     </article>
-    {% include disqus.html disqus_identifier=page.disqus_identifier %}
+    {% capture disqus %}{{ page.disqus_identifier }}{{img.link}}{% endcapture %}
+    {% include disqus.html disqus_identifier=diqus %}
 </div>
