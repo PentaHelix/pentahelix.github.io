@@ -15,6 +15,9 @@ published: true
 <div class="posts">
     <article class="post">
     	<script>
+        	var myParam = location.search.split('myParam=')[1];
+            if(){
+            }
     		//<img src="{{img.link}}.png" alt="{{img.title}}">
     		//<video autoplay="autoplay" loop="loop" poster="{{img.link}}.jpg" preload="auto"><source src="{{img.link}}.webm" type="video/webm"></video>
         </script>
