@@ -5,7 +5,13 @@ published: true
 ---
 
 <div class="blogPreview">
-	
+	<article class="post">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ site.posts[0].title }}</a></h1>
+	<div class="entry">
+        {{ site.posts[0].excerpt }}
+    </div>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
 </div>
 
 <div class="images">
