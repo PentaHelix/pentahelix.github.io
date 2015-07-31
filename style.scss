@@ -35,7 +35,7 @@ body {
     font-size: 0;
 }
 
-.image, video{
+.image{
 	width: calc(50% - 10px);
     height: 213px;
     display: inline-block;
@@ -60,6 +60,11 @@ body {
 
 img{
 	vertical-align: middle;
+}
+
+video{
+	width: 100%;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
