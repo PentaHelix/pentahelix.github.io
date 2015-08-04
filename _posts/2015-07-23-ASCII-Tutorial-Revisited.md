@@ -23,7 +23,7 @@ For this tutorial I created a basic scene with a few shapes and colors.
 ![Scene](http://imgur.com/a/sDF8S#kOJy7J4)
 
 ##The Shader
-In Unity 5, an ImageEffect is made up of 2 components: a Shader to do the computing on the GPU, as well as a Script to control the shader. Let's start with the Shader. Here's a basic Unity Shader: 
+In Unity 5, an ImageEffect is made up of 2 components: a Shader to do the computing on the GPU, as well as a Script to control the shader. Let's start with the Script. Here's a basic Unity PostEffectBase: 
 ```glsl
 Shader "Custom/ASCIIShader" {
     Properties {
@@ -79,7 +79,7 @@ int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
 float onSpriteX = (i.uv.x % _tileW) * _tilesX;
 float onSpriteY = (i.uv.y % _tileH) * _tilesY;
 ```
-
+This calculates the coordinates of the current pixel on the charactermap made earlier. 
 ```c#
 using System;
 using UnityEngine;
