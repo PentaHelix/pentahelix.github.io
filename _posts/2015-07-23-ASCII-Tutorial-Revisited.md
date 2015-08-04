@@ -24,6 +24,40 @@ For this tutorial I created a basic scene with a few shapes and colors.
 
 ##The Shader
 In Unity 5, an ImageEffect is made up of 2 components: a Shader to do the computing on the GPU, as well as a Script to control the shader. Let's start with the Shader. Here's a basic Unity Shader: 
+```glsl
+	Shader "Custom/ASCIIShader" {
+	Properties {
+		_MainTex ("Base", 2D) = "white" {}
+	}
+
+	SubShader {
+		Pass{
+			CGPROGRAM
+	        #pragma fragment frag
+	        #pragma vertex vert_img
+			#pragma target 3.0
+			#include "UnityCG.cginc"
+
+
+			struct v2f {
+				float4 pos : SV_POSITION;
+				float2 uv  : TEXCOORD0;
+			};
+
+			sampler2D _MainTex;
+
+			float4 frag(v2f i) : COLOR{
+					return tex2D(_MainTex, i.uv)
+				}
+			}
+			ENDCG
+		}
+	}
+	FallBack off
+}
+
+```
+
 ```c#
 using System;
 using UnityEngine;
