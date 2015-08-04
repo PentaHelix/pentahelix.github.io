@@ -8,7 +8,7 @@ Hey everyone, Unity 5 was released recently (well, somewhat recently), and I tho
 
 <!--excerpt-->
 
-Hey everyone, Unity 5 was released recently (well, somewhat recently), and I thought I'd rewrite the tutorial for the ASCII shader to suit the Unity 5 Image Effects. I also made several improvements to it during development of chrawl. So here goes, ASCII Shader Mk.II
+Hey everyone, Unity 5 was released recently (well, somewhat recently), and I thought I'd rewrite the tutorial for the ASCII shader to suit the Unity 5 Image Effects. I also made several improvements to it during development of [chrawl](http://pentahelix.github.io). So here goes, ASCII Shader Mk.II
 
 ##ASCII Greyscale
 To start off, you are going to need a texture with an ASCII representation of various greyscale values on it, ordered by brightness. I made mine in a sprite editor called [Aseprite](http://aseprite.org/), it should look somewhat like this:
@@ -177,3 +177,8 @@ if(charMask.r == 1.0){
 ```
 This basically checks if the current pixel on the charmap is white (the pixel is on the character) or not (on the background). If yes this simply returns the color of main texture, if not it returns the color, but darkend.
 
+And that's it!
+
+![ASCII Effect](http://i.imgur.com/8RVlEg1.png)
+
+I hope you were  able to follow the tutorial, it'll probably take some time to wrap your head around this. If you would like to see any other novelty shader covered, or have any suggestions, feedback, noticed a mistake, leave comment and let me know!
