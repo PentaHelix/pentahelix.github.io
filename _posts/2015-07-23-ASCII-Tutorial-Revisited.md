@@ -13,7 +13,7 @@ Hey everyone, Unity 5 was released recently (well, somewhat recently), and I tho
 ##ASCII Greyscale
 To start off, you are going to need a texture with an ASCII representation of various greyscale values on it, ordered by brightness. I made mine in a sprite editor called [Aseprite](http://aseprite.org/), it should look somewhat like this:
 
-![ASCII Ramp](http://imgur.com/a/sDF8S#oIYVhJj)
+![ASCII Ramp](http://i.imgur.com/oIYVhJj.png)
 
 If you need some help coming up with characters, take a look at [this](http://paulbourke.net/dataformats/asciiart/), however keep in mind that if you draw your own characters, greyscale values may vary since your **B** might be bolder than my B, and therefore appear brighter.
 
@@ -21,7 +21,7 @@ Now with that out of the way, it's time to setup
 
 ##The Scene
 For this tutorial I created a basic scene with a few shapes and colors.
-![Scene](http://imgur.com/a/sDF8S#kOJy7J4)
+![Scene](http://i.imgur.com/kOJy7J4.png)
 
 ##The Script
 In Unity 5, an ImageEffect is made up of 2 components: a Shader to do the computing on the GPU, as well as a Script to control the shader. Let's start with the Script. Here's a basic Unity PostEffectBase: 
