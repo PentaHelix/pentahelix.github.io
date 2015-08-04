@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 
@@ -157,7 +157,7 @@ half2 charCoords = half2((b * 31.0f / 300.0f)+(onSpriteX*31.0f/300.0f), (onSprit
 float3 charMask = tex2D(_CharTex, charCoords);
 ```
 
-This line gets the actual pixel we want on the character map. Some information: The character map is 300px wide, and contains 8 characters, each 31px wide. So in glsl terms, 31/300 is one character. Take the brightness [\b] and multiply is by one character, to get to the character corresponding to the brightness. Then, we use the variables onSpriteX (cycling 0 to 1 for each character's x/y) to read the pixel we are currently at. If we were to return charMask, we would get every tile mapped to a character, but in black and white, just like our character map:
+This line gets the actual pixel we want on the character map. Some information: The character map is 300px wide, and contains 8 characters, each 31px wide. So in glsl terms, 31/300 is one character. Take the brightness [b] and multiply is by one character, to get to the character corresponding to the brightness. Then, we use the variables [onSpriteX] and [onSpriteY] (cycling 0 to 1 for each character's x/y) to read the pixel we are currently at. If we were to return charMask, we would get every tile mapped to a character, but in black and white, just like our character map:
 ![Black and White ASCII](http://i.imgur.com/QOq20WU.png)
 
 In order to get color we need to use the character as a mask for our color.
