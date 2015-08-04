@@ -3,6 +3,7 @@ published: false
 ---
 
 
+
 Hey everyone, Unity 5 was released recently (well, somewhat recently), and I thought I'd rewrite the tutorial for the ASCII shader to suit the Unity 5 Image Effects.
 
 <!--excerpt-->
@@ -24,6 +25,76 @@ For this tutorial I created a basic scene with a few shapes and colors.
 
 ##The Shader
 In Unity 5, an ImageEffect is made up of 2 components: a Shader to do the computing on the GPU, as well as a Script to control the shader. Let's start with the Script. Here's a basic Unity PostEffectBase: 
+
+```c#
+using System;
+using UnityEngine;
+namespace UnityStandardAssets.ImageEffects{
+	[ExecuteInEditMode]
+	public class ASCIIScript:PostEffectsBase{
+		//Variables required for the ImageEffect
+		public Shader shader;
+		private Material mat;
+
+		public override bool CheckResources (){
+            CheckSupport(false);
+            mat = CheckShaderAndCreateMaterial(shader, mat);
+            return isSupported;
+        }
+
+		private void OnRenderImage(RenderTexture source, RenderTexture destination){
+			Graphics.Blit(source, destination, mat);
+		}
+	}
+}
+```
+If you know c#, this should all make sense to you, if you are using UnityScript learn c# :P (alternatively just accept this).
+
+Here is the script we'll be using:
+```c#
+using System;
+using UnityEngine;
+namespace UnityStandardAssets.ImageEffects{
+	[ExecuteInEditMode]
+	public class ASCIIScript:PostEffectsBase{
+		
+		//Variables required for the ImageEffect
+		public Shader ASCIIShader;
+		private Material m_ASCII;
+
+		//Values for the Shader
+		public Texture2D CharTex;
+		public float tilesX = 160;
+		public float tilesY = 50;
+		public float darkness = .8f;
+
+		public override bool CheckResources (){
+			// Necessary shader stuff
+            CheckSupport(false);
+            m_ASCII = CheckShaderAndCreateMaterial(ASCIIShader, m_ASCII);
+
+            // Setting shader properties
+            if (isSupported){
+				m_ASCII.SetTexture("_CharTex", CharTex);
+				
+				m_ASCII.SetFloat("_tilesX", tilesX);
+				m_ASCII.SetFloat("_tilesY", tilesY);
+
+				m_ASCII.SetFloat("_tileW", 1/tilesX);
+				m_ASCII.SetFloat("_tileH", 1/tilesY);
+
+				m_ASCII.SetFloat("_darkness", darkness);
+            }
+            return isSupported;
+        }
+
+		private void OnRenderImage(RenderTexture source, RenderTexture destination){
+			Graphics.Blit(source, destination, m_ASCII);
+		}
+	}
+}
+```
+
 ```glsl
 Shader "Custom/ASCIIShader" {
     Properties {
@@ -80,27 +151,3 @@ float onSpriteX = (i.uv.x % _tileW) * _tilesX;
 float onSpriteY = (i.uv.y % _tileH) * _tilesY;
 ```
 This calculates the coordinates of the current pixel on the charactermap made earlier. 
-```c#
-using System;
-using UnityEngine;
-namespace UnityStandardAssets.ImageEffects{
-	[ExecuteInEditMode]
-	public class ASCIIScript:PostEffectsBase{
-		//Variables required for the ImageEffect
-		public Shader shader;
-		private Material mat;
-
-		public override bool CheckResources (){
-            CheckSupport(false);
-            mat = CheckShaderAndCreateMaterial(shader, mat);
-            return isSupported;
-        }
-
-		private void OnRenderImage(RenderTexture source, RenderTexture destination){
-			Graphics.Blit(source, destination, mat);
-		}
-	}
-}
-```
-If you know c#, this should all make sense to you, if you are using UnityScript learn c# :P (alternatively just accept this).
-
