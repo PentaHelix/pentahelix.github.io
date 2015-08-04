@@ -35,7 +35,6 @@ namespace UnityStandardAssets.ImageEffects{
 		private Material mat;
 
 		public override bool CheckResources (){
-			// Necessary shader stuff
             CheckSupport(false);
             mat = CheckShaderAndCreateMaterial(shader, mat);
             return isSupported;
@@ -46,5 +45,15 @@ namespace UnityStandardAssets.ImageEffects{
 		}
 	}
 }
-
 ```
+If you know c#, this should all make sense to you, if you are using UnityScript learn c# :P (alternatively just accept this).
+
+For the shader we will need a few values:
+|Value   |Description                                    |
+|--------|---------------------------------------------- |
+|tileW   |How wide is one character?                     |
+|tileW   |How high is one character?                     |
+|tilesX  |How many characters are displayed horizontally?|
+|tilesY  |How many characters are displayed vertically?  |
+|darkness|Overall darkness of the rendered image?        |
+
