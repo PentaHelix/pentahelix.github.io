@@ -72,8 +72,13 @@ float4 c = tex2D(_MainTex, uv);
 (this is in the frag function, however if you don't have basic shader knowledge you should probably read about that first)
 Now that we have the color we want, we need to get it's brightness, I'm using the [simplified Liminance formula](http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color).
 ```glsl
-	int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
+int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
 ``` 
+
+```glsl
+float onSpriteX = (i.uv.x % _tileW) * _tilesX;
+float onSpriteY = (i.uv.y % _tileH) * _tilesY;
+```
 
 ```c#
 using System;
