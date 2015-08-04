@@ -52,16 +52,28 @@ Shader "Custom/ASCIIShader" {
 }
 ```
 
-This is a blank shader that simply returns the texture it is given in our case the current frame. For the ASCII shader we start by pixelating the screen:
+This is a blank shader that simply returns the texture it is given in our case the current frame. For our shader we will need a few values:
+
+|Value   |Description                                    |
+|--------|---------------------------------------------- |
+|tilesX  |How many characters are displayed horizontally?|
+|tilesY  |How many characters are displayed vertically?  |
+|tileW   |How wide is one character?                     |
+|tileH   |How high is one character?                     |
+|darkness|Overall darkness of the rendered image?        | 
+
+More on those later, when we feed them to the shader via our script, so don't worry if you see those in the shader code, they weill be addressed a bit later
+
+For the ASCII shader we start by pixelating the screen:
 ```glsl
-	half2 uv = half2((int)(i.uv.x / _tileW) * _tileW + _tileW / 2, (int)(i.uv.y / _tileH) * _tileH + _tileH / 2);
-    float4 c = tex2D(_MainTex, uv);
+half2 uv = half2((int)(i.uv.x / _tileW) * _tileW + _tileW / 2, (int)(i.uv.y / _tileH) * _tileH + _tileH / 2);
+float4 c = tex2D(_MainTex, uv);
 ```
 (this is in the frag function, however if you don't have basic shader knowledge you should probably read about that first)
 Now that we have the color we want, we need to get it's brightness, I'm using the [simplified Liminance formula](http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color).
 ```glsl
 	int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
-```
+``` 
 
 ```c#
 using System;
@@ -86,13 +98,4 @@ namespace UnityStandardAssets.ImageEffects{
 }
 ```
 If you know c#, this should all make sense to you, if you are using UnityScript learn c# :P (alternatively just accept this).
-
-For the shader we will need a few values:
-|Value   |Description                                    |
-|--------|---------------------------------------------- |
-|tilesX  |How many characters are displayed horizontally?|
-|tilesY  |How many characters are displayed vertically?  |
-|tileW   |How wide is one character?                     |
-|tileH   |How high is one character?                     |
-|darkness|Overall darkness of the rendered image?        |
 
