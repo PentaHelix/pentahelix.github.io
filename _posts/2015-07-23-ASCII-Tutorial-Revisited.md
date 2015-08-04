@@ -25,5 +25,27 @@ For this tutorial I created a basic scene with a few shapes and colors.
 ##The Shader
 In Unity 5, an ImageEffect is made up of 2 components: a Shader to do the computing on the GPU, as well as a Script to control the shader. Let's start with the Script. Here's a basic Unity ImageEffect PostEffectBase template: 
 ```c#
+using System;
+using UnityEngine;
+namespace UnityStandardAssets.ImageEffects{
+	[ExecuteInEditMode]
+	public class ASCIIScript:PostEffectsBase{
+		//Variables required for the ImageEffect
+		public Shader shader;
+		private Material mat;
+
+		public override bool CheckResources (){
+			// Necessary shader stuff
+            CheckSupport(false);
+            mat = CheckShaderAndCreateMaterial(shader, mat);
+            
+            return isSupported;
+        }
+
+		private void OnRenderImage(RenderTexture source, RenderTexture destination){
+			Graphics.Blit(source, destination, mat);
+		}
+	}
+}
 
 ```
