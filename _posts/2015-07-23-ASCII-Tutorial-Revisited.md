@@ -62,7 +62,7 @@ This is a blank shader that simply returns the texture it is given in our case t
 |tileH   |How high is one character?                     |
 |darkness|Overall darkness of the rendered image?        | 
 
-More on those later, when we feed them to the shader via our script, so don't worry if you see those in the shader code, they weill be addressed a bit later.,
+More on those later, when we feed them to the shader via our script, so don't worry if you see those in the shader code, they weill be addressed a bit later.
 
 For the ASCII shader we start by pixelating the screen:
 ```glsl
