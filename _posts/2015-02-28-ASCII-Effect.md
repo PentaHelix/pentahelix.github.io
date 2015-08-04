@@ -5,6 +5,9 @@ title: ASCII Effect
 excerpt_separator: "<!--more-->"
 ---
 
+
+###Warning!! This tutorial contains old code an is really unoptimized. Head over to [here](http://pentahelix.github.io/ASCII-Tutorial-Revisited/) for a newer and better one!
+
 ![3d ASCII Demo](http://i.imgur.com/Mm5OksT.gif)
 Learn how to program this post processing effect in Unity using IndieEffects!
 
