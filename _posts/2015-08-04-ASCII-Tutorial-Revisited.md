@@ -49,7 +49,7 @@ namespace UnityStandardAssets.ImageEffects{
 	}
 }
 ```
-If you know c#, this should all make sense to you, if you are using UnityScript learn c# :P (alternatively just accept this).
+If you know c#, this should all make sense to you, if you are using UnityScript learn c# :P (alternatively just accept this as working).
 
 Here is the script we'll be using:
 ```c#
