@@ -15,6 +15,8 @@ To start off, you are going to need a texture with an ASCII representation of va
 
 ![ASCII Ramp](http://i.imgur.com/oIYVhJj.png)
 
+This is basically a texture which contains characters in ascending brightness in a grid of 31px * 52px. The grid can be any size, just remember to adjust the shader later on to fit your grid.
+
 If you need some help coming up with characters, take a look at [this](http://paulbourke.net/dataformats/asciiart/), however keep in mind that if you draw your own characters, greyscale values may vary since your **B** might be bolder than my B, and therefore appear brighter.
 
 Now with that out of the way, it's time to setup 
