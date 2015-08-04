@@ -96,7 +96,7 @@ You can see that the screen is 160 by 50 characters wide/high, and the brightnes
 Here's a basic one:
 
 ```glsl
-Shader "Custom/ASCIIShader" {
+Shader "Custom/BasicShader" {
     Properties {
         _MainTex ("Base", 2D) = "white" {}
     }
