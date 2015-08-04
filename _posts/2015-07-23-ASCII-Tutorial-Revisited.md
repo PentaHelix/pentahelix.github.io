@@ -51,9 +51,9 @@ If you know c#, this should all make sense to you, if you are using UnityScript 
 For the shader we will need a few values:
 |Value   |Description                                    |
 |--------|---------------------------------------------- |
-|tileW   |How wide is one character?                     |
-|tileH   |How high is one character?                     |
 |tilesX  |How many characters are displayed horizontally?|
 |tilesY  |How many characters are displayed vertically?  |
+|tileW   |How wide is one character?                     |
+|tileH   |How high is one character?                     |
 |darkness|Overall darkness of the rendered image?        |
 
