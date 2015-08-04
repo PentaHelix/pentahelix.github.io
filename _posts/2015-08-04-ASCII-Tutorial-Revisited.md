@@ -4,6 +4,7 @@ layout: post
 ---
 
 
+
 Hey everyone, Unity 5 was released recently (well, somewhat recently), and I thought I'd rewrite the tutorial for the ASCII shader to suit the Unity 5 Image Effects.
 
 <!--excerpt-->
@@ -52,6 +53,7 @@ namespace UnityStandardAssets.ImageEffects{
 If you know c#, this should all make sense to you, if you are using UnityScript learn c# :P (alternatively just accept this as working).
 
 Here is the script we'll be using:
+
 ```c#
 using System;
 using UnityEngine;
@@ -136,20 +138,26 @@ This is a blank shader that simply returns the texture it is given in our case t
 As you can see, those are all already fed to the shader via the script.
 
 For the ASCII shader we start by pixelating the screen:
+
 ```glsl
 half2 uv = half2((int)(i.uv.x / _tileW) * _tileW + _tileW / 2, (int)(i.uv.y / _tileH) * _tileH + _tileH / 2);
 float4 c = tex2D(_MainTex, uv);
 ```
+
 (this is in the frag function, however if you don't have basic shader knowledge you should probably read about that first)
 Now that we have the color we want, we need to get its brightness, I'm using the [simplified Luminance formula](http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color).
+
 ```glsl
 int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
 ``` 
+
 Next:
+
 ```glsl
 float onSpriteX = (i.uv.x % _tileW) * _tilesX;
 float onSpriteY = (i.uv.y % _tileH) * _tilesY;
 ```
+
 This calculates the coordinates of the current pixel on the charactermap made earlier. By modulusing (is that even a word?) [i.uv.x] with [\_tileW], onSpriteX cycles from 0 to [\_tileW] [\_tilesX] times. Since [\_tileW] = 1 / [\_tilesX], [\_tileW] * [\_tilesX] = 1. This multiplication means that the cycle goes from 0 to 1 [\_tilesX] times, i.e. once per character. The same principle is used for onSpriteY. 
 
 ```glsl
@@ -170,7 +178,34 @@ if(charMask.r == 1.0){
 	return c;
 }
 ```
+
 This basically checks if the current pixel on the charmap is white (the pixel is on the character) or not (on the background). If yes this simply returns the color of main texture, if not it returns the color, but darkend.
+
+Now finally, we need to add the properties to our shader:
+
+```glsl
+Properties {
+	_MainTex ("Base", 2D) = "white" {}
+	_CharTex ("Character Map", 2D) = "white" {}
+	_tilesX ("X Characters", Int) = 160
+	_tilesY ("Y Characters", Int) = 50
+	_tileW ("Character Width", Float) = 0.0
+	_tileH ("Character Height", Float) = 0.0
+	_darkness ("Darkness", Float) = 0.0
+}
+```
+
+as well as declare them above our frag function
+
+```glsl
+sampler2D _MainTex;
+sampler2D _CharTex;
+int _tilesX;
+int _tilesY;
+float _tileW;
+float _tileH;
+float _darkness;
+```
 
 And that's it!
 
