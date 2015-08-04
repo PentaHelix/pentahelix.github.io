@@ -95,6 +95,8 @@ namespace UnityStandardAssets.ImageEffects{
 }
 ```
 
+You can see that the screen is 160 by 50 characters wide/high, and the brightness is .8f. in CheckResources (called when the shader is initialized) we create the material, check for support, and set the shaders variables. OnRenderImage is called once per tick and runs the current frame through the shader. You need to set the ASCIIShader variable to the shader we'll create in the Inspector
+
 ```glsl
 Shader "Custom/ASCIIShader" {
     Properties {
