@@ -141,7 +141,7 @@ half2 uv = half2((int)(i.uv.x / _tileW) * _tileW + _tileW / 2, (int)(i.uv.y / _t
 float4 c = tex2D(_MainTex, uv);
 ```
 (this is in the frag function, however if you don't have basic shader knowledge you should probably read about that first)
-Now that we have the color we want, we need to get its brightness, I'm using the [simplified Liminance formula](http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color).
+Now that we have the color we want, we need to get its brightness, I'm using the [simplified Luminance formula](http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color).
 ```glsl
 int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
 ``` 
@@ -175,5 +175,114 @@ This basically checks if the current pixel on the charmap is white (the pixel is
 And that's it!
 
 ![ASCII Effect](http://i.imgur.com/8RVlEg1.png)
+
+Here are the full files if you don't feel like learning and want to copy/paste:
+
+```c#
+using System;
+using UnityEngine;
+namespace UnityStandardAssets.ImageEffects{
+	[ExecuteInEditMode]
+	public class ASCIIScript:PostEffectsBase{
+		
+		//Variables required for the ImageEffect
+		public Shader ASCIIShader;
+		private Material m_ASCII;
+
+		//Values for the Shader
+		public Texture2D CharTex;
+		public float tilesX = 160;
+		public float tilesY = 50;
+		public float darkness = .8f;
+
+		public override bool CheckResources (){
+			// Necessary shader stuff
+            CheckSupport(false);
+            m_ASCII = CheckShaderAndCreateMaterial(ASCIIShader, m_ASCII);
+
+            // Setting shader properties
+            if (isSupported){
+				m_ASCII.SetTexture("_CharTex", CharTex);
+				
+				m_ASCII.SetFloat("_tilesX", tilesX);
+				m_ASCII.SetFloat("_tilesY", tilesY);
+
+				m_ASCII.SetFloat("_tileW", 1/tilesX);
+				m_ASCII.SetFloat("_tileH", 1/tilesY);
+
+				m_ASCII.SetFloat("_darkness", darkness);
+            }
+            return isSupported;
+        }
+
+		private void OnRenderImage(RenderTexture source, RenderTexture destination){
+			Graphics.Blit(source, destination, m_ASCII);
+		}
+	}
+}
+
+```
+
+```glsl
+Shader "Custom/ASCIIShader" {
+	Properties {
+		_MainTex ("Base", 2D) = "white" {}
+		_CharTex ("Character Map", 2D) = "white" {}
+		_tilesX ("X Characters", Int) = 160
+		_tilesY ("Y Characters", Int) = 50
+		_tileW ("Character Width", Float) = 0.0
+		_tileH ("Character Height", Float) = 0.0
+		_darkness ("Darkness", Float) = 0.0
+	}
+
+	SubShader {
+		Pass{
+			CGPROGRAM
+	        #pragma fragment frag
+	        #pragma vertex vert_img
+			#pragma target 3.0
+			#include "UnityCG.cginc"
+
+
+			struct v2f {
+				float4 pos : SV_POSITION;
+				float2 uv  : TEXCOORD0;
+			};
+
+			sampler2D _MainTex;
+			sampler2D _CharTex;
+			int _tilesX;
+			int _tilesY;
+			float _tileW;
+			float _tileH;
+			float _darkness;
+
+
+			float4 frag(v2f i) : COLOR{
+				half2 uv = half2((int)(i.uv.x / _tileW) * _tileW + _tileW / 2, (int)(i.uv.y / _tileH) * _tileH + _tileH / 2);
+				float4 c = tex2D(_MainTex, uv);
+				
+				int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
+
+				float onSpriteX = (i.uv.x % _tileW) * _tilesX;
+				float onSpriteY = (i.uv.y % _tileH) * _tilesY;
+				
+				half2 charCoords = half2((b * 31.0f / 300.0f)+(onSpriteX*31.0f/300.0f), (onSpriteY));
+				float4 charMask = tex2D(_CharTex, charCoords);
+				if(charMask.r == 1.0){
+					return c;
+				}else{
+					//Darken Color relative to tile darkness, offset by 2 so it never equals 0
+					c *= (b+2)/10.0f;
+					return c;
+				}
+			}
+			ENDCG
+		}
+	}
+	FallBack off
+}
+
+```
 
 I hope you were  able to follow the tutorial, it'll probably take some time to wrap your head around this. If you would like to see any other novelty shader covered, or have any suggestions, feedback, noticed a mistake, leave comment and let me know!
