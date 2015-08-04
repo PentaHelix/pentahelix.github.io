@@ -19,4 +19,5 @@ If you need some help coming up with characters, take a look at [this](http://pa
 Now with that out of the way, it's time to setup 
 
 ##The Scene
-
+For this tutorial I created a basic scene with a few shapes and colors.
+![Scene]()
