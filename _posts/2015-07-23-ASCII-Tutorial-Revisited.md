@@ -38,7 +38,6 @@ namespace UnityStandardAssets.ImageEffects{
 			// Necessary shader stuff
             CheckSupport(false);
             mat = CheckShaderAndCreateMaterial(shader, mat);
-            
             return isSupported;
         }
 
