@@ -52,7 +52,7 @@ For the shader we will need a few values:
 |Value   |Description                                    |
 |--------|---------------------------------------------- |
 |tileW   |How wide is one character?                     |
-|tileW   |How high is one character?                     |
+|tileH   |How high is one character?                     |
 |tilesX  |How many characters are displayed horizontally?|
 |tilesY  |How many characters are displayed vertically?  |
 |darkness|Overall darkness of the rendered image?        |
