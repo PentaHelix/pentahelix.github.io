@@ -3,7 +3,8 @@ published: true
 layout: post
 ---
 
-There hasn't been a lot of activity here recently, here's why.
+
+There hasn't been a lot of activity on the blog recently, here's why.
 
 <!--excerpt-->
 
