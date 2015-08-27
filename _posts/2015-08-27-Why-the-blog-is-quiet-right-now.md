@@ -3,7 +3,7 @@ published: true
 layout: post
 ---
 
-For the few people that frequent this blog (both of you), you might be asking yourself why the updates have slowed down. This is due to 2 reasons:
+There hasn't been a lot of activity here recently, here's why.
 
 <!--excerpt-->
 
