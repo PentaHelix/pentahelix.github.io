@@ -3,11 +3,16 @@ published: true
 layout: page
 ---
 
+
 TL:DR:
+
 chrawl(prototype) Open Sourced & Discontinued.
+
 New sci-fi chrawl in the works.
 
+
 <!--excerpt-->
+
 
 ##chrawl Cancelled
 You read it right, chrawl is cancelled. But fear not, a new one is in the works! After a lot of thinking about this I decided to take the nuclear option and start over. This is because of a few reason, here are the 2 biggest ones:
@@ -24,5 +29,6 @@ Secondly, I have begun working on the ne chrawl, and you can expect devlogs to p
 
 For the new chrawl, I want to make devlogs a lot more technical and interesting for people who are making games. I might do some tutorials a la ASCII Shader, or just generally explain systems in more detail. 
 
-That's it for now, see you soon :)
+That's it for now, see you soon
+
 ~Jakob
