@@ -4,9 +4,7 @@ layout: page
 ---
 
 TL:DR:
-
 chrawl(prototype) Open Sourced & Discontinued.
-
 New sci-fi chrawl in the works.
 
 <!--excerpt-->
