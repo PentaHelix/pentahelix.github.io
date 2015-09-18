@@ -1,5 +1,6 @@
 ---
-published: false
+published: true
+layout: page
 ---
 
 ##TL:DR
@@ -18,7 +19,7 @@ You read it right, chrawl is cancelled. But fear not, a new one is in the works!
 
 
 ##What happens next?
-The thing that will happen immediately is chrawl(prototype) being open sourced. If you want to check out how the game is made take a look [here](). Unfortunately, a lot of the code is really bad, so if you want to use some of the code, you're gonna have to scavange the files for usable stuff. All of the code is Licensed with the DBAD Liscense, for details read it in the repo. 
+The thing that will happen immediately is chrawl(prototype) being open sourced. If you want to check out how the game is made take a look [here](https://github.com/PentaHelix/chrawl). Unfortunately, a lot of the code is really bad, so if you want to use some of the code, you're gonna have to scavange the files for usable stuff. All of the code is Licensed with the DBAD Liscense, for details read it in the repo. 
 
 Secondly, I have begun working on the ne chrawl, and you can expect devlogs to pop up here in the next few weeks. I'm still building up the core mechanics, so I don't really have anything to show for yet. What I can tell you is that it will be a ~~science based dragon MMO~~ sci-fi roguelike very similar to chrawl, howerer in a completely different setting. It will of course still be rendered it ASCII(it's actually ANSI but who cares :P).
 
