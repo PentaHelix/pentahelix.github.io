@@ -6,6 +6,16 @@ Hey everyone to the first devlog for chrawl2 (that's what it's called for now, i
 
 I use procedural Meshes primarily for building up the map since I want it to be dynamic and also efficient. In chrawl1 I used to construct a map by placing a 30 x 40 grid of blocks and empty spaces. This worked for some time, but later when I added shops and such I had to awkwardly resize and move some blocks, it got relly messy. So for chrawl2 I wanted to go for something more "lightweight" and simple. For this nwe approch I am generating a list of rooms and paths connecting them and then creating custom meshes to build the walls of them.
 
-```
-	
+```c#
+public static GameObject MakeMesh(Vector3[] verts, int[] tris, Vector3 pos){
+    	GameObject g = new GameObject("Wall");
+    	MeshFilter rend = g.AddComponent<MeshFilter>();
+    	Mesh m = new Mesh();
+    	rend.mesh = m;
+    	m.vertices = verts;
+    	m.triangles = tris;
+    	m.uv = new Vector2[]{new Vector2(0,1), new Vector2(1,1), new Vector2(1,0), new Vector2(0,0)};
+    	g.transform.position = pos;
+    	return g;
+    }
 ```
