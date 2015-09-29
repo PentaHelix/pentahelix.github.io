@@ -19,3 +19,5 @@ public static GameObject MakeMesh(Vector3[] verts, int[] tris, Vector3 pos){
     	return g;
     }
 ```
+
+This method is in MeshGen.cs and creates a Mesh given vertices and triangles, attaches it to a GameObject and returns it. 
