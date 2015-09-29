@@ -8,7 +8,7 @@ I use procedural Meshes primarily for building up the map since I want it to be 
 
 ```c#
 public static GameObject MakeMesh(Vector3[] verts, int[] tris, Vector3 pos){
-    	GameObject g = new GameObject("Wall");
+    	GameObject g = new GameObject("Mesh");
     	MeshFilter rend = g.AddComponent<MeshFilter>();
     	Mesh m = new Mesh();
     	rend.mesh = m;
