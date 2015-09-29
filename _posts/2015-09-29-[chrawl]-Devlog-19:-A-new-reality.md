@@ -8,7 +8,7 @@ I use procedural Meshes primarily for building up the map since I want it to be 
 
 ![Bad Method](http://i.imgur.com/XLOZtqS.png)
 
-So for chrawl2 I wanted to go for something more "lightweight" and simple. For this nwe approch I am generating a list of rooms and paths connecting them and then creating custom meshes to build the walls of them.
+So for chrawl2 I wanted to go for something more "lightweight" and simple. For this new approch I am generating a list of rooms and paths connecting them and then creating custom meshes to build the walls of them, creating only 1 Quad per wall.
 
 ![Good Method](http://i.imgur.com/dEYBxK4.png)
 
