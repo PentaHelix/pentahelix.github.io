@@ -2,6 +2,6 @@
 published: false
 ---
 
-## A New Post
+Hey everyone to the first devlog for chrawl2 (that's what it's called for now, incredibly creative, I know). Since I've spent the past two weeks re-implementing many games, I started with my favorites (which are ProcGen Libs). So far I've got map generation working, a basic implementation of gun generation, and some texture generation. I'll focus on the Map Gen in this devlog.
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+In chrawl, you will explore 
