@@ -301,7 +301,7 @@ Shader "Custom/ASCIIShader" {
 				int b = (int)((c.r*2+c.g*5+c.b*1)/_darkness);
 
 				float onSpriteX = (i.uv.x % _tileW) * _tilesX;
-				float onSpriteY = (i.uv.y % _tileH) * _tilesY;
+				float onSpriteY = -(i.uv.y % _tileH) * _tilesY;
 				
 				half2 charCoords = half2((b * 31.0f / 300.0f)+(onSpriteX*31.0f/300.0f), (onSpriteY));
 				float4 charMask = tex2D(_CharTex, charCoords);
