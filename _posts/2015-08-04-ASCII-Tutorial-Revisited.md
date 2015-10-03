@@ -5,6 +5,7 @@ layout: post
 
 
 
+
 Hey everyone, Unity 5 was released recently (well, somewhat recently), and I thought I'd rewrite the tutorial for the ASCII shader to suit the Unity 5 Image Effects.
 
 <!--excerpt-->
@@ -155,7 +156,7 @@ Next:
 
 ```glsl
 float onSpriteX = (i.uv.x % _tileW) * _tilesX;
-float onSpriteY = (i.uv.y % _tileH) * _tilesY;
+float onSpriteY = -(i.uv.y % _tileH) * _tilesY;
 ```
 
 This calculates the coordinates of the current pixel on the charactermap made earlier. By modulusing (is that even a word?) [i.uv.x] with [\_tileW], onSpriteX cycles from 0 to [\_tileW] [\_tilesX] times. Since [\_tileW] = 1 / [\_tilesX], [\_tileW] * [\_tilesX] = 1. This multiplication means that the cycle goes from 0 to 1 [\_tilesX] times, i.e. once per character. The same principle is used for onSpriteY. 
