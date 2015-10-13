@@ -38,4 +38,6 @@ public class Structure{
 	}
 ```
 The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a list of 
-ints from which paths originate. 
+ints from which paths originate. To explain this method we have to look at how rooms are built after they have been generated.
+
+![Room Exits]()
