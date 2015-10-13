@@ -11,7 +11,7 @@ Here is what a standard map in chrawl2 looks like:
 
 As you can see, there are different rooms, with paths connecting them. Rooms spawn at different heights, however no rooms will ever be on top of each other, which makes collision checking and minimaps easier. 
 
-![Map Top](http://imgur.com/R7vjCM6)
+![Map Top](http://imgur.com/R7vjCM6.png)
 
 When generating the map, a room is represented as an object with certain properties:
 ```c#
@@ -55,7 +55,7 @@ That's more or less the whole algorithm. However, up to now all we have is an ar
 
 After a certain amount of rooms have been placed, the algorithm stops. Now, a loop loops through every room and builds them up.
 
-![Room Exits](http://imgur.com/lu3llzP)
+![Room Exits](http://imgur.com/lu3llzP.png)
 
 First of all, the walls surrounding the room are placed. Walls may not be place in a spot where a path leads away for the room, so every index where a path was placed has been added to the *exits* List\. With this, it is easy to loop through all the segments and only place valid ones. 
 
