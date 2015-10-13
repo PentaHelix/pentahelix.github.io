@@ -36,8 +36,8 @@ public class Structure{
 		public bool Intersects(Structure s, bool margin=true){
 			if(margin)return !(s.x > x + w || s.x + s.w < x || s.y > y + h || s.y + s.h < y);
 			else return !(s.x >= x + w || s.x + s.w <= x || s.y >= y + h || s.y + s.h <= y);
-		}
 	}
+}
 ```
 The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a list of 
 ints from which paths originate, but back to that later.
