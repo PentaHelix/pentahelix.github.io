@@ -3,6 +3,7 @@ published: true
 layout: post
 ---
 
+
 In this week's devlog we will look into generating a procedural map.
 
 <!--excerpt-->
@@ -15,7 +16,7 @@ As you can see, there are different rooms, with paths connecting them. Rooms spa
 ![Map Top](http://imgur.com/R7vjCM6.png)
 
 When generating the map, a room is represented as an object with certain properties:
-```c#
+```#
 public class Structure{
 		public int x;
 		public int y;
@@ -60,7 +61,7 @@ After a certain amount of rooms have been placed, the algorithm stops. Now, a lo
 
 First of all, the walls surrounding the room are placed. Walls may not be place in a spot where a path leads away for the room, so every index where a path was placed has been added to the *exits* List\. With this, it is easy to loop through all the segments and only place valid ones. 
 
-```
+```c#
 foreach(i in w*2+h*2){ //Once around the room
 	if(room.exits.Contains(i)){
     	continue;
@@ -73,7 +74,7 @@ foreach(i in w*2+h*2){ //Once around the room
 This is very simplified, but the basic principle is the same. It loops around the room and places a wall if no path exits the room at that segment.
 
 One of these loops (there are 4, one for each side) looks like this:
-```
+```c#
 for(int i = 0; i < s.w; i++){
 		if(s.exits.Contains(i))continue;
 		rend = MeshGen.MakeQuad(
