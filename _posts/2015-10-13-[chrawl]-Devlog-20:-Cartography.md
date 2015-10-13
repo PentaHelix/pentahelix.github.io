@@ -16,6 +16,7 @@ As you can see, there are different rooms, with paths connecting them. Rooms spa
 ![Map Top](http://imgur.com/R7vjCM6.png)
 
 When generating the map, a room is represented as an object with certain properties:
+
 ```c#
 public class Structure{
 	public int x;
@@ -39,6 +40,7 @@ public class Structure{
 }
 
 ```
+
 The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a list of 
 ints from which paths originate, but back to that later.
 
@@ -75,6 +77,7 @@ foreach(i in w*2+h*2){ //Once around the room
 This is very simplified, but the basic principle is the same. It loops around the room and places a wall if no path exits the room at that segment.
 
 One of these loops (there are 4, one for each side) looks like this:
+
 ```c#
 for(int i = 0; i < s.w; i++){
 		if(s.exits.Contains(i))continue;
