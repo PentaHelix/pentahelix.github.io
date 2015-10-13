@@ -8,7 +8,7 @@ In this week's devlog we will look into generating a procedural map.
 
 <!--excerpt-->
 
-Here is what a standard map in chrawl2 looks like:
+Her is what a standard map in chrawl2 looks like:
 ![Map Side](http://imgur.com/jUma1Xa.png)
 
 As you can see, there are different rooms, with paths connecting them. Rooms spawn at different heights, however no rooms will ever be on top of each other, which makes collision checking and minimaps easier. 
