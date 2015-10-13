@@ -13,3 +13,27 @@ As you can see, there are different rooms, with paths coneccting them. Rooms spa
 
 ![Map Top]()
 
+When generating the map, a room is represented as an object with certain properties:
+```c#
+public class Structure{
+		public int x;
+		public int y;
+		public int w;
+		public int h;
+		public int z;
+		public List<int> exits = new List<int>();
+
+		public Structure(int x, int y, int w, int h, int z){
+			this.x = x;
+			this.y = y;
+			this.w = w;
+			this.h = h;
+			this.z = z;
+		}
+
+		public bool Intersects(Structure s, bool margin=true){
+			if(margin)return !(s.x > x + w || s.x + s.w < x || s.y > y + h || s.y + s.h < y);
+			else return !(s.x >= x + w || s.x + s.w <= x || s.y >= y + h || s.y + s.h <= y);
+		}
+	}
+```
