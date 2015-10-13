@@ -37,6 +37,7 @@ public class Structure{
 		else return !(s.x >= x + w || s.x + s.w <= x || s.y >= y + h || s.y + s.h <= y);
 	}
 }
+
 ```
 The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a list of 
 ints from which paths originate, but back to that later.
@@ -68,6 +69,7 @@ foreach(i in w*2+h*2){ //Once around the room
     	BuildWall(i);
     }
 }
+
 ```
 
 This is very simplified, but the basic principle is the same. It loops around the room and places a wall if no path exits the room at that segment.
@@ -84,6 +86,7 @@ for(int i = 0; i < s.w; i++){
 				new Vector3(x+i*3,     z,   y+h)
 			},matWall);
 }
+
 ```
 
 After creating all the walls, floor and ceiling are pretty easy to place.
