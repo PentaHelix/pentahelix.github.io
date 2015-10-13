@@ -37,3 +37,5 @@ public class Structure{
 		}
 	}
 ```
+The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a list of 
+ints from which paths originate. 
