@@ -48,11 +48,10 @@ At the start of generating a map, one room is placed at (0,0). All other rooms a
 4. Starting from the chosen room, move l in direction d
 5. Place new room with random w/h at that point
 6. Check new room for overlaps
-6a. Room has no overlaps
-7.  Add room to room array, goto to 1. if more rooms need to be generated, else quit
-
-6b. Room has overlaps
-7.  Scrap room, go to 1
+7. Room has no overlaps:
+	Add room to room array, goto to 1. if more rooms need to be generated, else quit
+   Room has overlaps
+    Scrap room, go to 1
 
 
 To explain this method we have to look at how rooms are built after they have been generated.
