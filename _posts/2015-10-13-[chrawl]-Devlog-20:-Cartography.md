@@ -38,8 +38,17 @@ public class Structure{
 	}
 ```
 The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a list of 
-ints from which paths originate. To explain this method we have to look at how rooms are built after they have been generated.
+ints from which paths originate, but back to that later.
 
+At the start of generating a map, one room is placed at (0,0). All other rooms are placed according to this algorithm:
+
+1. Choose random room
+2. Choose random direction (N,E,S,W)
+
+
+
+
+To explain this method we have to look at how rooms are built after they have been generated.
 ![Room Exits]()
 
 To actual method for building rooms is too long for a blog post so instead, let me write it up in pseudocode
@@ -69,3 +78,5 @@ for(int i = 0; i < s.w; i++){
 			},matWall);
 }
 ```
+
+This uses MeshGen, which we looked at last DevLog. 
