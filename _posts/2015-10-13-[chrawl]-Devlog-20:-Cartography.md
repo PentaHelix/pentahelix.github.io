@@ -41,3 +41,15 @@ The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a
 ints from which paths originate. To explain this method we have to look at how rooms are built after they have been generated.
 
 ![Room Exits]()
+
+To actual method for building rooms is too long for a blog post so instead, let me write it up in pseudocode
+
+```
+foreach(i in w*2+h*2){ //Once around the room
+	if(room.exits.Contains(i)){
+    	continue;
+    }else{
+    	BuildWall(i);
+    }
+}
+```
