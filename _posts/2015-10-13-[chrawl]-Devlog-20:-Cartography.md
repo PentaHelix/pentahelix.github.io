@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 
 In this week's devlog we will look into generating a procedural map.
