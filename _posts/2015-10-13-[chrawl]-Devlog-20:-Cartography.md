@@ -54,3 +54,18 @@ foreach(i in w*2+h*2){ //Once around the room
 }
 ```
 
+This is very simplified, but the basic principle is the same. It loops around the room and places a wall if no path exits the room at that segment.
+
+One such loop (there are 4, one for each side) looks like this:
+```
+	for(int i = 0; i < s.w; i++){
+			if(s.exits.Contains(i))continue;
+			rend = MeshGen.MakeQuad(
+				new Vector3[]{
+					new Vector3(x+i*3,     z+3, y+h),
+					new Vector3(x+(i+1)*3, z+3, y+h),
+					new Vector3(x+(i+1)*3, z,   y+h),
+					new Vector3(x+i*3,     z,   y+h)
+				},matWall);
+		}
+```
