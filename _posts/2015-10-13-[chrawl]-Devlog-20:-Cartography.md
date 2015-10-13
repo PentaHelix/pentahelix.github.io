@@ -51,9 +51,11 @@ At the start of generating a map, one room is placed at (0,0). All other rooms a
 7. No Overlaps: Add room, go to 1
 8. Overlaps: Scrap room, go to 1
 
-That's more or less the whole Map generation algorithm. 
+That's more or less the whole Map generation algorithm. Now for actually building the rooms using MeshGen.
 
-To explain this method we have to look at how rooms are built after they have been generated.
+
+To explain how rooms are built, I hace to explain how *exits* is used to place walls.
+
 ![Room Exits]()
 
 To actual method for building rooms is too long for a blog post so instead, let me write it up in pseudocode
@@ -84,4 +86,5 @@ for(int i = 0; i < s.w; i++){
 }
 ```
 
-This uses MeshGen, which we looked at last DevLog. 
+After creating all the walls, floor and ceiling are relatively easy to place.
+If I had more time I would go more in depth on this, but alas, chrawl is calling :)
