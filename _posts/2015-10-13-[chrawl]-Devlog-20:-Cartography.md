@@ -48,6 +48,7 @@ At the start of generating a map, one room is placed at (0,0). All other rooms a
 
 
 
+
 To explain this method we have to look at how rooms are built after they have been generated.
 ![Room Exits]()
 
