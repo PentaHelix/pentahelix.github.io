@@ -16,7 +16,7 @@ As you can see, there are different rooms, with paths connecting them. Rooms spa
 ![Map Top](http://imgur.com/R7vjCM6.png)
 
 When generating the map, a room is represented as an object with certain properties:
-```c
+```c#
 public class Structure{
 		public int x;
 		public int y;
