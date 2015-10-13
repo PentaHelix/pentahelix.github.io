@@ -3,11 +3,12 @@ published: true
 layout: post
 ---
 
+
 Welcome back to the devlog!
 
 <!--excerpt-->
 
-Hey everyone to the first devlog for chrawl2. Since I've spent the past two weeks re-implementing many systems, I started with my favorites (which are ProcGen Libs). So far I've got mesh generation and map generation working, a basic implementation of gun generation, and some texture generation. I'll focus on the Mesh Gen in this devlog.
+Hey everyon to the first devlog for chrawl2. Since I've spent the past two weeks re-implementing many systems, I started with my favorites (which are ProcGen Libs). So far I've got mesh generation and map generation working, a basic implementation of gun generation, and some texture generation. I'll focus on the Mesh Gen in this devlog.
 
 I use procedural Meshes primarily for building up the map since I want it to be dynamic and also efficient. In chrawl1 I used to construct a map by placing a 30 x 40 grid of blocks and empty spaces. This worked for some time, but later when I added shops and such I had to awkwardly resize and move some blocks, it got relly messy. 
 
