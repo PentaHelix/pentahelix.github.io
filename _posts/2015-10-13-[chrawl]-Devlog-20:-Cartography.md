@@ -18,6 +18,7 @@ As you can see, there are different rooms, with paths connecting them. Rooms spa
 When generating the map, a room is represented as an object with certain properties:
 
 ```c#
+
 public class Structure{
 	public int x;
 	public int y;
@@ -38,7 +39,6 @@ public class Structure{
 		else return !(s.x >= x + w || s.x + s.w <= x || s.y >= y + h || s.y + s.h <= y);
 	}
 }
-
 ```
 
 The properties *x,y,z*/*w,h* are position/size as you would expect. *exits* is a list of 
