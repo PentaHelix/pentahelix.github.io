@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 ---
+
 
 A lot of guns, a lot of Systems
 
