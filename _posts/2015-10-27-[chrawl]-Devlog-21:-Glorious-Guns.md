@@ -87,14 +87,97 @@ public class TexGen{
 }
 ```
 
-In my Sprites/ProcTex/Patterns1/2 folders 
-![Pattern 1]()
+In my Sprites/ProcTex/Patterns1/2 folders are patterns that are randomly selected and sent to the shader. 
 
-![Pattern 2]()
+![Pattern 1](http://imgur.com/WkgGynK.png)
 
-![Pattern 3]()
+![Pattern 2](http://imgur.com/nnnigIs.png)
 
-![Pattern 4]()
+![Pattern 3](http://imgur.com/NRoZ0uf.png)
+
+![Pattern 4](http://imgur.com/5QMQvQf.png)
+
+_Color1 and _Color2 are chosen from 2 lists which are designed to result in high contrast colors. (List.Random() is an extension method, it simply returns a random element from the list).
+
+_Color3 is a shade of grey in a certain range.
+
+_PatMod1 and _PatMod2 are x/y translation and a scale factor to give patterns more variety.
+
+The shader then simply creates the patterns and maps them to different sections of the UV.
+
+```glsl
+Shader "Custom/ProcTex" {
+	Properties {
+		_Color1 ("Color 1", Color) = (1,1,1,1)
+		_Color2 ("Color 2", Color) = (1,1,1,1)
+		_Color3 ("Color 3", Color) = (1,1,1,1)
+		_Pattern1 ("Albedo (RGB)", 2D) = "white" {}
+		_Pattern2 ("Albedo (RGB)", 2D) = "white" {}
+		_PatMod1 ("Pattern 1 Modifiers", Vector) = (1,1,1)
+		_PatMod2 ("Pattern 1 Modifiers", Vector) = (1,1,1)
+	}
+
+
+	SubShader {
+		Tags { "RenderType"="Opaque"}
+		Pass {
+			Name "BASE"
+			
+			CGPROGRAM
+			#pragma vertex vert_img
+			#pragma fragment frag
+
+			#pragma multi_compile_fog
+
+			#include "UnityCG.cginc"
+
+			sampler2D _Pattern1;
+			sampler2D _Pattern2;
+
+			fixed4 _Color1;
+			fixed4 _Color2;
+			fixed4 _Color3;
+
+			float3 _PatMod1;
+			float3 _PatMod2;
+
+
+			fixed4 frag (v2f_img i) : SV_Target{
+				fixed4 c1 = _Color1;
+				fixed4 c2 = _Color2;
+				fixed4 c3 = _Color3;
+				if(i.uv.x <= .5f && i.uv.y <= .5f){
+					half2 uvPat = i.uv/_PatMod1[2]*2;
+					uvPat.x += _PatMod1[0];
+					uvPat.y += _PatMod1[1];
+					if(tex2D(_Pattern1, uvPat).a == 1){
+						return c1.rgba;
+					}else{
+						return c2.rgba;
+					}
+				}
+				
+				if(i.uv.y >= 0.5){
+					half2 uvPat = half2(i.uv.x/_PatMod2[2], i.uv.x/_PatMod2[2]*2);
+					uvPat.x += _PatMod2[0];
+					uvPat.y += _PatMod2[1];
+					if(tex2D(_Pattern2, uvPat).a == 1){
+						return c3.rgba;
+					}else{
+						return c3 * 0.5f;
+					}	
+				}
+
+				return c3*.5f;
+			}
+			ENDCG			
+		}
+	} 
+
+	Fallback "VertexLit"
+}
+
+```
 
 ##Where to go from here
 The thing I am working on right now is module properties, which is going to be a json that lists certain properties for every module, such as tags, custom textures, ... . This makes it possible to have a module requiere certain tags from other modules to create more fine-tuned module synergies. 
