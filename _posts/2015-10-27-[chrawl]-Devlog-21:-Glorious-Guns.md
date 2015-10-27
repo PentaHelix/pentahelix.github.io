@@ -23,3 +23,4 @@ Finally, I unwrap the mesh onto a empty UV with a simple pattern which will late
 Here are some other modules:
 ![Barrel]()
 ![Magazine]()
+
