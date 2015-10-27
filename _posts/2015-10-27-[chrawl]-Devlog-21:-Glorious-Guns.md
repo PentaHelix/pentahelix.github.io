@@ -15,3 +15,5 @@ Every Gun is built up from 5 "modules". These modules are *body*, *barrel*, *mag
 This is just the basic mesh, a pretty generic gun body. The object has 4 empty transform children. (In Blender they are called plain axis empties, the only important thing is that they have a position and a rotation.) These transforms are the points on which the other modules will attach on. 
 
 ![Attachment Points]()
+
+Finally, I unwrap the mesh onto a empty UV with a simple pattern which will later be filled by the texture generator. 
