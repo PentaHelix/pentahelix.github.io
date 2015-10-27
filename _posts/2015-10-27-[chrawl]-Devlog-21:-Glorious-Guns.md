@@ -24,4 +24,53 @@ Here are some other modules:
 ![Barrel]()
 ![Magazine]()
 
-Once the models are finished I import them into Unity.
+Once the models are finished I import them into Unity. 
+```c#
+public class GunGen{
+	public static GameObject MakeGun(int r, int b, int m){
+		<Instantiate Modules>
+		<Create Empty GameObject ot server as parent>
+        
+		Transform gun = new GameObject("Gun").transform;
+
+		rifle.parent = gun;
+		barrel.parent = gun;
+		magazine.parent = gun;
+
+		rifle.name = "Rifle";
+		barrel.name = "Barrel";
+		magazine.name = "Magazine";
+
+		rifle.localPosition = Vector3.zero;
+		barrel.localPosition = Vector3.zero;
+		magazine.localPosition = Vector3.zero;
+
+		Align(barrel.Find("Rifle"),rifle.Find("Barrel"));
+		Align(magazine.Find("Rifle"),rifle.Find("Magazine"));
+		gun.transform.localScale = new Vector3(.4f,.4f,.4f);
+		Gun gunC = gun.gameObject.AddComponent<Gun>();
+
+		Transform muzzle = barrel.Find("Muzzle");
+		muzzle.GetComponent<Renderer>().material = MonoBehaviour.Instantiate(Resources.Load("Materials/Meshes/MuzzleFlash")) as Material;
+		muzzle.gameObject.AddComponent<Light>().color = new Color(1f,0.55f, 0.02f);
+		muzzle.GetComponent<Light>().range = 4;
+		muzzle.GetComponent<Light>().intensity = 3;
+
+		gun.localPosition = new Vector3(.38f,-.46f,.6f);
+		gun.localEulerAngles = new Vector3(10,10,0);
+		gun.gameObject.AddComponent<Center>().center = gun.localPosition;
+
+		Transform bulletPart = (MonoBehaviour.Instantiate(Resources.Load("Prefabs/Misc/BulletParticle")) as GameObject).transform;
+		bulletPart.parent = gun;
+		bulletPart.name = "BulletParticle";
+		bulletPart.localPosition = new Vector3(.6f,.6f,.6f);
+		bulletPart.localEulerAngles = new Vector3(30,90,0);
+
+		gun.Find("Rifle").GetComponent<Renderer>().material = TexGen.MakeMaterial();
+		gun.GetComponent<Gun>().modules = new int[]{r, b, m};
+
+		gun.gameObject.AddComponent<AudioSource>().clip = Resources.Load("Audio/Shot") as AudioClip;
+		gun.GetComponent<AudioSource>().playOnAwake = false;
+		return gun.gameObject;
+	}	
+```
