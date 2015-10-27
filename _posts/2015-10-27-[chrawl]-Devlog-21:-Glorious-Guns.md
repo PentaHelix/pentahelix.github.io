@@ -87,6 +87,15 @@ public class TexGen{
 }
 ```
 
+In my Sprites/ProcTex/Patterns1/2 folders 
+![Pattern 1]()
+
+![Pattern 2]()
+
+![Pattern 3]()
+
+![Pattern 4]()
+
 ##Where to go from here
 The thing I am working on right now is module properties, which is going to be a json that lists certain properties for every module, such as tags, custom textures, ... . This makes it possible to have a module requiere certain tags from other modules to create more fine-tuned module synergies. 
 
