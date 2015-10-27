@@ -30,20 +30,7 @@ public class GunGen{
 	public static GameObject MakeGun(int r, int b, int m){
 		<Instantiate Modules>
 		<Create Empty GameObject ot server as parent>
-        
-		Transform gun = new GameObject("Gun").transform;
-
-		rifle.parent = gun;
-		barrel.parent = gun;
-		magazine.parent = gun;
-
-		rifle.name = "Rifle";
-		barrel.name = "Barrel";
-		magazine.name = "Magazine";
-
-		rifle.localPosition = Vector3.zero;
-		barrel.localPosition = Vector3.zero;
-		magazine.localPosition = Vector3.zero;
+        <Align attachment points using Attach()>
 
 		Align(barrel.Find("Rifle"),rifle.Find("Barrel"));
 		Align(magazine.Find("Rifle"),rifle.Find("Magazine"));
@@ -74,3 +61,9 @@ public class GunGen{
 		return gun.gameObject;
 	}	
 ```
+
+Align is a very simple method that positions/rotates the parents of two transforms so that they align.
+
+'''c#
+
+'''
