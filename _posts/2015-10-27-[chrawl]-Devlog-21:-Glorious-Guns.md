@@ -59,17 +59,19 @@ Currently, texture generation is very simple, but it works pretty well. Basicall
 
 ```c#
 public class TexGen{
-	public static List<Color> colors1 = new List<Color>{new Color32(23, 255, 0, 255),
-														new Color32(214, 232, 12, 255), 
-														new Color32(255, 200, 0, 255),
-														new Color32(232, 127, 12, 255),
-														new Color32(255, 45, 0, 255)};
+	public static List<Color> colors1 = new List<Color>{
+   		new Color32(23, 255, 0, 255),
+		new Color32(214, 232, 12, 255), 
+		new Color32(255, 200, 0, 255),
+		new Color32(232, 127, 12, 255),
+		new Color32(255, 45, 0, 255)};
 
-	public static List<Color> colors2 = new List<Color>{new Color32(255, 0, 168, 255),
-														new Color32(130, 12, 232, 255), 
-														new Color32(0, 28, 255, 255), 
-														new Color32(12, 174, 232, 255),
-														new Color32(0, 255, 156, 255)};
+	public static List<Color> colors2 = new List<Color>{
+    	new Color32(255, 0, 168, 255),
+		new Color32(130, 12, 232, 255), 
+		new Color32(0, 28, 255, 255), 
+		new Color32(12, 174, 232, 255),
+		new Color32(0, 255, 156, 255)};
 
 	public static Material MakeMaterial(){
 		Material m = MonoBehaviour.Instantiate(Resources.Load("Materials/Basic/ProcTex")) as Material;
