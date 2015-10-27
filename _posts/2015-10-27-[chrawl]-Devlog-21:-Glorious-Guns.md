@@ -4,6 +4,7 @@ layout: post
 ---
 
 
+
 A lot of guns, a lot of Systems
 
 <!--excerpt-->
@@ -192,4 +193,5 @@ I also want to expand the modularity of this system, e.g. separate the gun body 
 Any other improvements/suggestions? Leave a comment and let me know!
 
 See you in a fortnight
+
 ~Jakob
