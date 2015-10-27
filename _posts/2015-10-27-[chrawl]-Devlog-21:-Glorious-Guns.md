@@ -55,7 +55,7 @@ static void Align(Transform t1, Transform t2){
 ```
 
 ##Texture Generation
-Currently, texture generation is very simple, but it works pretty well. Basically, I choose 2 colors, map them to a pattern, choose 2 shades of grey (can I even say that anymore?), map those to a pattern, and then map those patterns to a UV. Sounds pretty simple right?
+Currently, texture generation is very simple, but it works pretty well. Basically, I choose 2 colors, map them to a pattern, choose a shade of grey, map it to a pattern, and then map those patterns to a UV. Sounds pretty simple right?
 
 ```c#
 public class TexGen{
