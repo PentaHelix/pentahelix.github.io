@@ -87,7 +87,7 @@ public class TexGen{
 }
 ```
 
-In my Sprites/ProcTex/Patterns1/2 folders are patterns that are randomly selected and sent to the shader. 
+In my Sprites/ProcTex/Patterns* folders are patterns that are randomly selected and sent to the shader. Patterns in Patterns1 are more random, and Patterns in Pattners2 are more geometric/regular, to give the guns a more consistent feel.
 
 ![Pattern 1](http://imgur.com/WkgGynK.png)
 
