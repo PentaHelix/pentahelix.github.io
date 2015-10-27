@@ -25,6 +25,7 @@ Finally, I unwrap the mesh onto a empty UV with a simple pattern which will late
 
 Here are some other modules:
 ![Barrel](http://imgur.com/oU5FYxP.png)
+
 ![Magazine](http://imgur.com/L7pUySr.png)
 
 Once the models are finished I import them into Unity. There are no prefabs for modules. GunGen.cs simply instantiates from .fbx files.
@@ -56,8 +57,32 @@ static void Align(Transform t1, Transform t2){
 ##Texture Generation
 Currently, texture generation is very simple, but it works pretty well. Basically, I choose 2 colors, map them to a pattern, choose 2 shades of grey (can I even say that anymore?), map those to a pattern, and then map those patterns to a UV. Sounds pretty simple right?
 
-```glsl
+```c#
+public class TexGen{
+	public static List<Color> colors1 = new List<Color>{new Color32(23, 255, 0, 255),
+														new Color32(214, 232, 12, 255), 
+														new Color32(255, 200, 0, 255),
+														new Color32(232, 127, 12, 255),
+														new Color32(255, 45, 0, 255)};
 
+	public static List<Color> colors2 = new List<Color>{new Color32(255, 0, 168, 255),
+														new Color32(130, 12, 232, 255), 
+														new Color32(0, 28, 255, 255), 
+														new Color32(12, 174, 232, 255),
+														new Color32(0, 255, 156, 255)};
+
+	public static Material MakeMaterial(){
+		Material m = MonoBehaviour.Instantiate(Resources.Load("Materials/Basic/ProcTex")) as Material;
+		m.SetTexture("_Pattern1", MonoBehaviour.Instantiate(Resources.Load("Sprites/ProcTex/Patterns1/pat0"+((int)(Random.value * 5)+1))) as Texture2D);
+		m.SetTexture("_Pattern2", MonoBehaviour.Instantiate(Resources.Load("Sprites/ProcTex/Patterns2/pat0"+((int)(Random.value * 2)+1))) as Texture2D);
+		m.SetColor("_Color1", colors1.Random());
+		m.SetColor("_Color2", colors2.Random());
+		m.SetColor("_Color3", Color.white * (Random.value * 0.3f + 0.2f));
+		m.SetVector("_PatMod1", new Vector3(Random.value * .5f, Random.value * .5f, Mathf.Max(1f, Random.value * 4f)));
+		m.SetVector("_PatMod2", new Vector3(Random.value * .5f, Random.value * .5f, Mathf.Max(4, Random.value * 10f)));
+		return m;
+	}
+}
 ```
 
 ##Where to go from here
