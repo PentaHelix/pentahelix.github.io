@@ -8,6 +8,9 @@ A lot of guns, a lot of Systems
 
 Hey everybody, this week I'll explain how gun-generation works in chrawl. As a note, I have not yet finished GunGen, however most of the key systems are in place and it's mostly down to content now.
 
+
+##Gun Generation
+
 Every Gun is built up from 5 "modules". These modules are *body*, *barrel*, *magazine*, *optics 1*, and *optics 2*. Personally, I like to use [Blender](http://www.blender.org) for modelling, however this should work with most modelling programs. My poor sculpting skills are one of the reasons why I chose to render my game in ASCII, so get used to lots of programmer art. Here's an example of a gun module:
 
 ![Gun Mesh](http://imgur.com/N4pgWzs.png)
@@ -33,7 +36,7 @@ public class GunGen{
 		<Create Empty GameObject to serve as parent>
         <Align attachment points using Align()>
 		<Setup various Components>
-        <Add >
+        <Add procgen Texture>
         <Return gameobject>
     }
 }
@@ -49,3 +52,15 @@ static void Align(Transform t1, Transform t2){
 	t1.parent.position += pos;
  }
 ```
+
+##Texture Generation
+
+##Where to go from here
+The thing I am working on right now is module properties, which is going to be a json that lists certain properties for every module, such as tags, custom textures, ... . This makes it possible to have a module requiere certain tags from other modules to create more fine-tuned module synergies. 
+
+I also want to expand the modularity of this system, e.g. separate the gun body into more modules. The number of module permutations grows exponentially to the number of modules per gun, so this would increase the gun variety drastically.
+
+Any other improvements/suggestions? Leave a comment and let me know!
+
+See you in a fortnight
+~Jakob
