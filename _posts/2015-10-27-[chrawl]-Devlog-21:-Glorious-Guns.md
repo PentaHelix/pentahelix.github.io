@@ -19,3 +19,7 @@ This is just the basic mesh, a pretty generic gun body. The object has 4 empty t
 Finally, I unwrap the mesh onto a empty UV with a simple pattern which will later be filled by the texture generator. 
 
 ![UV]()
+
+Here are some other modules:
+![Barrel]()
+![Magazine]()
