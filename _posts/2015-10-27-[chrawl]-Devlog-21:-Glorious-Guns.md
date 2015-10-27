@@ -33,12 +33,12 @@ Once the models are finished I import them into Unity. There are no prefabs for 
 ```c#
 public class GunGen{
 	public static GameObject MakeGun(int r, int b, int m){
-		<Instantiate Modules>
-		<Create Empty GameObject to serve as parent>
-        <Align attachment points using Align()>
-		<Setup various Components>
-        <Add procgen Texture>
-        <Return gameobject>
+		[Instantiate Modules]
+		[Create Empty GameObject to serve as parent]
+        [Align attachment points using Align()]
+		[Setup various Components]
+        [Add procgen Texture]
+        [Return gameobject]
     }
 }
 ```
