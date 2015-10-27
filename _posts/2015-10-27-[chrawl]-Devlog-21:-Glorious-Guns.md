@@ -24,6 +24,7 @@ Finally, I unwrap the mesh onto a empty UV with a simple pattern which will late
 ![UV](http://imgur.com/PypsH3i.png)
 
 Here are some other modules:
+
 ![Barrel](http://imgur.com/oU5FYxP.png)
 
 ![Magazine](http://imgur.com/L7pUySr.png)
@@ -53,6 +54,8 @@ static void Align(Transform t1, Transform t2){
 	t1.parent.position += pos;
  }
 ```
+
+The Gun Component does simple firing logic, as well as a pseudo reload animation (just a series of Tweens).
 
 ##Texture Generation
 Currently, texture generation is very simple, but it works pretty well. Basically, I choose 2 colors, map them to a pattern, choose a shade of grey, map it to a pattern, and then map those patterns to a UV. Sounds pretty simple right?
