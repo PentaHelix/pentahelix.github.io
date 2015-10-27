@@ -10,32 +10,34 @@ Hey everybody, this week I'll explain how gun-generation works in chrawl. As a n
 
 Every Gun is built up from 5 "modules". These modules are *body*, *barrel*, *magazine*, *optics 1*, and *optics 2*. Personally, I like to use [Blender](http://www.blender.org) for modelling, however this should work with most modelling programs. My poor sculpting skills are one of the reasons why I chose to render my game in ASCCI, so get used to lots of programmer art. Here's an example of a gun module:
 
-![Gun Mesh]()
+![Gun Mesh](http://imgur.com/N4pgWzs.png)
 
 This is just the basic mesh, a pretty generic gun body. The object has 4 empty transform children. (In Blender they are called plain axis empties, the only important thing is that they have a position and a rotation.) These transforms are the points on which the other modules will attach on. 
 
-![Attachment Points]()
+![Attachment Points](http://imgur.com/84mNUh4.png)
 
 Finally, I unwrap the mesh onto a empty UV with a simple pattern which will later be filled by the texture generator. 
 
-![UV]()
+![UV](http://imgur.com/PypsH3i.png)
 
 Here are some other modules:
-![Barrel]()
-![Magazine]()
+![Barrel](http://imgur.com/oU5FYxP.png)
+![Magazine](http://imgur.com/L7pUySr.png)
 
 Once the models are finished I import them into Unity. 
 ```c#
 public class GunGen{
 	public static GameObject MakeGun(int r, int b, int m){
 		<Instantiate Modules>
-		<Create Empty GameObject ot server as parent>
-        <Align attachment points using Attach()>
+		<Create Empty GameObject to serve as parent>
+        <Align attachment points using Align()>
 		<Setup various Components>
+        <Return gameobject>
     }
 }
 ```
 
+The parameters r, b, and m are numbers that represent the modules
 Align is a very simple method that positions/rotates the parents of two transforms so that they align.
 
 ```c#
