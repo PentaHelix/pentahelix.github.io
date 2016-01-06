@@ -16,4 +16,6 @@ However, for most low-poly art, triangles work a lot better than squares, so in 
 
 After applying the modifier, things are still looking pretty flat. To create some noise in the terrain, add a "Displace" modifer. Set midlevel to 0 and press the button to assign it a new texture. The right-most button next to the Texture should take you to the texture tab.
 
-![Displacement](http://i.imgur.com/GAzd0xl.png)![Texture Tab](http://i.imgur.com/Rpge5Mu.png)
+![Displacement](http://i.imgur.com/GAzd0xl.png)
+
+![Texture Tab](http://i.imgur.com/Rpge5Mu.png)
