@@ -14,8 +14,8 @@ However, for most low-poly art, triangles work a lot better than squares, so in 
 ![Triangles](http://i.imgur.com/HdXC86L.png)
 (Using "Fixed" for quad mode creates more unified triangles)
 
-After applying the modifier, things are still looking pretty flat. To create some noise in the terrain, add a "Displace" modifer. Set midlevel to 0 and press the button to assign it a new texture. The right-most button next to the Texture should take you to the texture tab.
-
+After applying the modifier, things are still looking pretty flat. To create some noise in the terrain, add a "Displace" modifer. Set midlevel to 0 and press the button to assign it a new texture.
 ![Displacement](http://i.imgur.com/GAzd0xl.png)
 
+ The right-most button next to the Texture should take you to the texture tab.
 ![Texture Tab](http://i.imgur.com/Rpge5Mu.png)
