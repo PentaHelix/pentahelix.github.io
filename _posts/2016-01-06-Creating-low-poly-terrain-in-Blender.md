@@ -27,8 +27,9 @@ To add some distortion to the plane, change the Texture type to "Clouds", change
 ![Texture Tab](http://i.imgur.com/YRd2bfa.png)
 
 Tweak the R value, as well as "Brightness", "Contrast", and "Saturation" until you find a suiting level of Displacement. (If you are in object mode, you can see the changes in realtime).
-
 ![Displaced](http://i.imgur.com/LW9dlue.png)
+
+
 
 
 TO BE CONTINUED
