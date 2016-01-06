@@ -4,6 +4,9 @@ layout: post
 ---
 
 
+Hey everyone, in this quick tutorial I will show you my method of creating low poly terrains in Blender.
+
+<!--excerpt-->
 
 ##Preparing a Plane
 A simple plane will be the base of our terrain.
