@@ -17,5 +17,6 @@ However, for most low-poly art, triangles work a lot better than squares, so in 
 After applying the modifier, things are still looking pretty flat. To create some noise in the terrain, add a "Displace" modifer. Set midlevel to 0 and press the button to assign it a new texture.
 ![Displacement](http://i.imgur.com/GAzd0xl.png)
 
- The right-most button next to the Texture should take you to the texture tab.
-![Texture Tab](http://i.imgur.com/Rpge5Mu.png)
+The right-most button next to the Texture should take you to the texture tab.
+To add some distortion to the plane, change the Texture type to "Clouds", change to color mode to "Color", and set the RGB Multiply values for G and B to 0. Tweak the R value, as well as "Brightness", "Contrast", and "Saturation" until you find a suiting level of Displacement. (If you are in object mode, you can see the changes in realtime).
+![Texture Tab](http://i.imgur.com/YRd2bfa.png)
