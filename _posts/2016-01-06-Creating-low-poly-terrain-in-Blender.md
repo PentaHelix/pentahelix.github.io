@@ -3,6 +3,7 @@ published: false
 ---
 
 
+
 ##Preparing a Plane
 A simple plane will be the base of our terrain.
 ![Add Plane](http://i.imgur.com/r1j0arW.png)
@@ -20,3 +21,6 @@ After applying the modifier, things are still looking pretty flat. To create som
 The right-most button next to the Texture should take you to the texture tab.
 To add some distortion to the plane, change the Texture type to "Clouds", change to color mode to "Color", and set the RGB Multiply values for G and B to 0. Tweak the R value, as well as "Brightness", "Contrast", and "Saturation" until you find a suiting level of Displacement. (If you are in object mode, you can see the changes in realtime).
 ![Texture Tab](http://i.imgur.com/YRd2bfa.png)
+
+
+TO BE CONTINUED
