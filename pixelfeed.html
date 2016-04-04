@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>#pixeldaily Feed</title>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <style>
+            .tweet{
+             margin:5px auto;
+             border-radius:3px;
+             background:white;
+             width:900px;
+            }
+            #result{
+             margin:0 auto;
+             width:1000px;
+             background:#CCC;
+             border-radius:5px;
+            }
+            #tweetText{
+             vertical-align:top;
+            }
+        </style>
+        <script type="text/javascript" charset="utf-8">
+            function searchTwitter() {
+                $.ajax({
+                    url: 'https://api.twitter.com/1.1/search/tweets.json?q=%23pixel_dailies&result_type=recent',
+                    success: function (data) {
+                        console.log("success");
+//                        var tweets = $('#tweets');
+//                        tweets.html('');
+//                        for (res in data['results']) {
+//                            tweets.append('<div>' + data['results'][res]['from_user'] + ' wrote: <p>' + data['results'][res]['text'] + '</p></div><br />');
+//                        }
+                    }
+                });
+            }
+            
+            $(document).ready(function(){
+                 searchTwitter();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="tweets"></div>
+    </body>
+<html>
