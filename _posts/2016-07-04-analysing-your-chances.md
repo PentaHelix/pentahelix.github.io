@@ -106,4 +106,9 @@ Jackpot seems to have a lot of differences to roulette, but it is actually very 
 This essentially means you have a large chance to win a bit of money, and a small chance to lose it all. Sound familiar? I could give you an example using the exact same calculations as above to show you playing like this is a bad idea.
 
 ##Coinflip
-There really isn't a lot to tell you here.
+There really isn't a lot to tell you here. The thing that gets you here is the "tax" that gambling sites collect from the coinflips. With a 50% chance of winning, you might think that every second person that plays on those sites makes a profit. This is wrong because this "tax" causes money to slowly move from the players to the site operators. With less money available to distribute to the players, there will be a lot more losers than winners.
+
+##Betting on matches
+There is not a lot of calculating to be done here, if you know how matches will end you can win a lot of money with betting. However, especially in csgo, there are an incredible amount of upsets (underdogs winning), that there is never really a "safe bet".  
+
+Any errors? Anything missing? Please let me know.
