@@ -94,3 +94,6 @@ Now, to win 50 points, I need to win 5 "rounds". The chance of winning a round i
 
 \\( 0.85 \cdot 0.85 \cdot 0.85 \cdot 0.85 \cdot 0.85 = (0.85)^5 \approx 0.44 = 44% \\)
 
+The chance of winning 50 points with this strategy is about 44%. This means that I would likely lose almost all of my points, instead of winning 50.
+
+By this 
