@@ -54,7 +54,7 @@ excerpt_separator: <!--excerpt-->
 #
  
 highlighter: rogue
-permalink: pretty
+permalink: /:title/
 markdown: maroku
 
 # The release of Jekyll Now that you're using
