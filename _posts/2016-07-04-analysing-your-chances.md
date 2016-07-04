@@ -78,7 +78,7 @@ Event | Probability
  
 Now to calculate the probability of losing 3 times in a row, simply multiply the probability for losing.
 
-\\( 0.5333.. \cdot 0.5333.. \cdot 0.5333.. = 0.5333...^3 \approx 0.15 = 15% \\)
+\\( 0.5333.. \cdot 0.5333.. \cdot 0.5333.. = (0.5333...)^3 \approx 0.15 = 15% \\)
 
 This looks even more confusing, but is actually not that difficult. 
 
