@@ -66,7 +66,7 @@ Event | Probability
 Black | 7/15 = 0.46666.. ~= 46.5%
 Green | 1/15 = 0.06666.. ~= 7%
 
-Alright, now for a concrete example. With 100 points in the bank, I decide to play roulette with this strategy, starting with a bid of 10 and doubling every time I lose. I will be betting on red, but betting on red or black doesn't make any difference as they both have the same probability.
+Alright, now for a concrete example. With 100 points in the bank, I decide to play roulette with this strategy, starting with a bid of 10 and doubling every time I lose. I will be betting on red, but betting on red or black doesn't make any difference as they both have the same probability of being the result.
 
 Round | Bet           | Win/Loss      | Earnings 
 ----- | ------------- | ------------- | ---- 
@@ -86,4 +86,8 @@ Now to calculate the probability of losing 3 times in a row, simply multiply the
 
 \\( 0.5333.. \cdot 0.5333.. \cdot 0.5333.. = (0.5333...)^3 \approx 0.15 = 15% \\)
 
-This means losing 3 times in a row has a probability of 15%, which seems pretty ok. 
+This means losing 3 times in a row has a probability of 15%, which seems pretty ok. However, I want to win more that 10 points, so I'll play multiple times. I'll set my goal as winning 50 points sp that I end up with a total of 150 points and could double my bet once more after losing 3 in a row, bettering my chances of winnning. 
+
+At this point it makes sense to stop looking at the game as individual bets, but instead as sets of bets, called "rounds". I can either win a round by winning the first or second bet I make, and lose it by losing 3 bets in a row.
+
+Now, to win 
