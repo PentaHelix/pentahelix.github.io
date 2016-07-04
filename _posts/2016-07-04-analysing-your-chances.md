@@ -37,7 +37,7 @@ A situation like this might lead many people to believe that red is less likely 
 
 Having cleared that up, we can move on to calculating actual probabilities. Let's start off with the most famous roulette strategy, the Martingale Roulette System. Basically this means that whenever you lose, you double your bet, until you win once, winning it all back.
 
-Example:
+One example of this strategy:
 
 Round | Bet           | Win/Loss      | Earnings 
 ----- | ------------- | ------------- | ---- 
@@ -45,3 +45,38 @@ Round | Bet           | Win/Loss      | Earnings
     2 | 4             | Loss          |   -6   
     3 | 8             | Loss          |  -14 
     4 | 16            | Win           |   +2 
+
+At the end of these 4 rounds, even after losing 3 times and only winning once, you are still 2 points in the plus, i.e. winning 2 points. With this strategy, no matter how many times you lose in a row, as long as you keep doubling your bets, you will evenentually win back everything, plus your starting bet. This means if you start with e.g. 8 points, you will eventually win 8 points. But here comes the catch: this strategy assumes that you can keep doubling your bet infinitly. Unfortuantly, noone has an endless amount of money, which means the strategy has a major flaw. Let's chack what the chances of winning anyway are. 
+
+Let's assume you are playing on a roulette gambling site. First, I'll create a list of all the probabilities  we know of.
+
+Event | Probability   
+----- | ------------- 
+  Red | 50%     
+Black | 50%
+
+Seems about right? Well, there is one thing that is not included in those possibilities: Green. As you might have realized, virtually all roulettes on gambling sites have an additional green field. In one example, there are 7 red fields, 7 red, and 1 green. So to calculate the probabilities, what you need to do is use a very simple formula. Divide the amount of fields of a color through the amount of all fields. This leaves us with:
+
+Event | Probability   
+----- | ------------- 
+  Red | 7/15 = 0.46666.. ~= 46.5%  
+Black | 7/15 = 0.46666.. ~= 46.5%
+Green | 1/15 = 0.06666.. ~= 7%
+
+Alright, now for a concrete example. With 100 points in the bank, I decide to play roulette with this strategy, starting with a bid of 10 and doubling every time I lose. I will be betting on red, but betting on red or black doesn't make any difference as they both have the same probability.
+
+Round | Bet           | Win/Loss      | Earnings 
+----- | ------------- | ------------- | ---- 
+    1 | 10            | Loss          |   -10
+    2 | 20            | Loss          |   -30  
+    3 | 40            | Loss          |   -70 
+    4 | 80            | Win           |   :(
+   
+After losing 3 times, I unfortunatley have no more points left to bet, and the strategy has failed me, costing me 70 points. But what are the chances of getting 3 losses in a row? I am betting on red, which means I win on 7 fields (red) and lose on 8 fields (black+green) of the 15 fields on the roulette.
+
+Event | Probability   
+----- | ------------- 
+  Win | 7/15 = 0.46666.. ~= 46.5%  
+ Loss | 8/15 = 0.53333.. ~= 53.5%
+ 
+ 
