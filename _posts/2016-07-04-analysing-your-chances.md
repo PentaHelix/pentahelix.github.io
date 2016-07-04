@@ -21,7 +21,7 @@ If you gamble, you will lose.
 
 ## The games
 
-While there are hundreds of gambling sites, they all feature essentially the same games. In this guide I will disect their mechanics and show you how you can calculate the chances of you winning, as well as bust some common myths.
+While there are hundreds of gambling sites, they all feature essentially the same games. In this guide I will disect their mechanics and show you how you can estimate the chances of you winning, as well as bust some common myths.
 
 ### Myths
 
@@ -30,7 +30,7 @@ To start this off, I would like to finally make one thing clear. Past results ca
 ![](https://i.imgur.com/eB5tvmp.png)
 *A streak of 10 reds*
 
-A situation like this might lead many people to believe that red is less likely to be drawn now, since "What are the chances of red coming 11 times in a row?". Well it turns out that even after red 10 times in a row the chances are still the same. In order to understand this, imagina a coin flip. The first flip results in heads. Now, by the same logic, tails should be more likely to be the result of the next throw. However, how would the coin "know" what the previous result was? The conditions of the throw are exactly the same, nothing is different compared to the previous throw, which means the chances are exactly the same, as before. The same thing applies to roulettes, etc. Past results can NOT influence new results. 
+A situation like this might lead many people to believe that red is less likely to be drawn now, since "What are the chances of red coming 11 times in a row?". Well it turns out that even after red 10 times in a row the chances are still the same. In order to understand this, imagine a coin flip. The first flip results in heads. Now, by the same logic, tails should be more likely to be the result of the next throw. However, how would the coin "know" what the previous result was? The conditions of the throw are exactly the same, nothing is different compared to the previous throw, which means the chances are exactly the same, as before. The same thing applies to roulettes, etc. Past results can NOT influence new results. 
 
 ## Roulette
 
