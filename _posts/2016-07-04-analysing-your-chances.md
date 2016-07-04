@@ -7,11 +7,11 @@ layout: post
 
 ## Context
 
-For some time now, there has been a lot of controversy surrounding the CS:GO community regarding underage gambling. Recently, this was escalated when youtubers were found to decieve their audiences with "fake" winnings on gambling sites. This inspired me to write up a guide on how to calculate the chances of you winning on various gambling sites/games.
+For some time now, there has been a lot of controversy surrounding the CS:GO community regarding underage gambling. Recently, this was escalated when youtubers were found to decieve their audiences with "fake" winnings on gambling sites. This inspired me to write up a guide on how to estimate your chances of winning on various gambling sites/games and to show that you are never likely to win.
 
 ## Disclaimer
 
-This guide will not show you how to win on gambling sites. "Winning" is not something you will be doing while gambling. Sure, there might be a few amazing wins along the way, but in the end, the ones who will be winning are the owners of the gambling site.
+This guide will not show you how to win on gambling sites. "Winning" is not something you will be doing while gambling. Sure, there might be a few amazing wins along the way, but in the end, the ones who are winning are the owners of the gambling site.
 
 I should also mention that I have not completed any higher education in mathematics, but I can say with confidence that what I write here is correct.
 
@@ -110,5 +110,8 @@ There really isn't a lot to tell you here. The thing that gets you here is the "
 
 ##Betting on matches
 There is not a lot of calculating to be done here, if you know how matches will end you can win a lot of money with betting. However, especially in csgo, there are an incredible amount of upsets (underdogs winning), that there is never really a "safe bet".  
+
+#Something to consider
+If none of this convinced you to stop gambling, consider one thing: Gambling sites are buisnesses. They are created to make money. If any game was ever in you favor, it would be in favor for every other player as well. This would cause the gambling site to lose a LOT of money, and it would cease to operate.
 
 Any errors? Anything missing? Please let me know.
