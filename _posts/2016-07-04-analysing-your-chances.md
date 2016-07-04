@@ -99,3 +99,5 @@ Now, to win 50 points, I need to win 5 "rounds". The chance of winning a round i
 The chance of winning 50 points with this strategy is about 44%. This means that I would likely lose almost all of my points, instead of winning 50.
 
 By this point I hope it is apparent that the game is a lot less in your favor than it seemed in the beginning. This is because the potential loss associated with a "round" is a lot bigger than the win. 
+
+##Jackpot
