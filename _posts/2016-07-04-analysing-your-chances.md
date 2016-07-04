@@ -86,8 +86,9 @@ Now to calculate the probability of losing 3 times in a row, simply multiply the
 
 \\( 0.5333.. \cdot 0.5333.. \cdot 0.5333.. = (0.5333...)^3 \approx 0.15 = 15% \\)
 
-This means losing 3 times in a row has a probability of 15%, which seems pretty ok. However, I want to win more that 10 points, so I'll play multiple times. I'll set my goal as winning 50 points sp that I end up with a total of 150 points and could double my bet once more after losing 3 in a row, bettering my chances of winnning. 
+This means losing 3 times in a row has a probability of 15%. Whenever I am not losing, I am winning, so the chance of winning is the inverse of 15% => 85%. An 85% chance of winning doesn't seem too bad, odes it? However, I want to win more that 10 points, so I'll play multiple times. I'll set my goal as winning 50 points so that I end up with a total of 150 points and could double my bet once more after losing 3 in a row, bettering my chances of winnning. 
 
 At this point it makes sense to stop looking at the game as individual bets, but instead as sets of bets, called "rounds". I can either win a round by winning the first or second bet I make, and lose it by losing 3 bets in a row.
 
-Now, to win 
+Now, to win 50 points, I need to win 5 "rounds". The chance of winning a round is about 85% so we can calculate the chance of winning 5 in a row.
+
