@@ -2,6 +2,9 @@
 published: true
 layout: post
 ---
+<!--excerpt-->
+
+
 #Analysing your chances
 
 ##Context
