@@ -13,9 +13,11 @@ For some time now, there has been a lot of controversy surrounding the CS:GO com
 
 This guide will not show you how to win on gambling sites. "Winning" is not something you will be doing while gambling. Sure, there might be a few amazing wins along the way, but in the end, the ones who will be winning are the owners of the gambling site.
 
+I should also mention that I have not completed any higher education in mathematics, but I can say with confidence that what I write here is correct.
+
 ### TL;DR
 
-You will lose.
+If you gamble, you will lose.
 
 ## The games
 
@@ -79,7 +81,3 @@ Event | Probability
 Now to calculate the probability of losing 3 times in a row, simply multiply the probability for losing.
 
 \\( 0.5333.. \cdot 0.5333.. \cdot 0.5333.. = (0.5333...)^3 \approx 0.15 = 15% \\)
-
-This looks even more confusing, but is actually not that difficult. 
-
-\\( {N \choose x} \cdot p^x \cdot (1 - p)^{N - x} \\)
