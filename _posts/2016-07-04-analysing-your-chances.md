@@ -78,4 +78,4 @@ Event | Probability
  
  Now, to calculate the chances of losing 3 times in a row, we need to use binomial distributions. Sounds complicated, and it kind of is. I won't explain the details of how it works, since this is not a maths class, but to applying the formula is easy enough.
  
-\\( {N \choose x}*p^x*(1-p)^{N-x}  \\)
+\\( {N \choose x} \\)
