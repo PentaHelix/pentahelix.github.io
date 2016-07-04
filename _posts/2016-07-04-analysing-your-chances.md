@@ -92,3 +92,4 @@ At this point it makes sense to stop looking at the game as individual bets, but
 
 Now, to win 50 points, I need to win 5 "rounds". The chance of winning a round is about 85% so we can calculate the chance of winning 5 in a row.
 
+\\( 0.85 \cdot 0.85 \cdot 0.85 \cdot 0.85 \cdot 0.85 = (0.85)^5 \approx 0.15 = 15% \\)
