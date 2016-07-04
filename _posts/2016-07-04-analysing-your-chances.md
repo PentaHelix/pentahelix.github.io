@@ -39,7 +39,6 @@ Having cleared that up, we can move on to calculating actual probabilities. Let'
 
 Example:
 
-
 Round | Bet           | Win/Loss      | Earnings 
 ----- | ------------- | ------------- | ---- 
     1 | 2             | Loss          |   -2   
