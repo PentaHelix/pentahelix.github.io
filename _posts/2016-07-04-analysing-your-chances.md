@@ -47,7 +47,7 @@ Round | Bet           | Win/Loss      | Earnings
 
 At the end of these 4 rounds, even after losing 3 times and only winning once, you are still 2 points in the plus, i.e. winning 2 points. With this strategy, no matter how many times you lose in a row, as long as you keep doubling your bets, you will evenentually win back everything, plus your starting bet. This means if you start with e.g. 8 points, you will eventually win 8 points. 
 
-NOTE: At this point it seems like 
+NOTE: At this point it seems like you can lose multiple times, and winning only once will ensure that you get profit.
 
 But here comes the catch: this strategy assumes that you can keep doubling your bet infinitly. Unfortuantly, noone has an endless amount of money, which means the strategy has a major flaw. Let's chack what the chances of winning anyway are. 
 
