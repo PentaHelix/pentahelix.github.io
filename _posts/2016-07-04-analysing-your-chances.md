@@ -90,10 +90,12 @@ This means losing 3 times in a row has a probability of 15%. Whenever I am not l
 
 At this point it makes sense to stop looking at the game as individual bets, but instead as sets of bets, called "rounds". I can either win a round by winning the first or second bet I make, and lose it by losing 3 bets in a row.
 
+NOTE: After looking at the game as "rounds", you see that it's is actually the other way around. You need to win multiple of these "rounds" in a row, and losing even one results in you losing almost all your points.
+
 Now, to win 50 points, I need to win 5 "rounds". The chance of winning a round is about 85% so we can calculate the chance of winning 5 in a row.
 
 \\( 0.85 \cdot 0.85 \cdot 0.85 \cdot 0.85 \cdot 0.85 = (0.85)^5 \approx 0.44 = 44% \\)
 
 The chance of winning 50 points with this strategy is about 44%. This means that I would likely lose almost all of my points, instead of winning 50.
 
-By this point I 
+By this point I hope it is apparent that the game is a lot less in your favor than it seemed in the beginning. This is because the potential loss associated with a "round" is a lot bigger than the win. 
