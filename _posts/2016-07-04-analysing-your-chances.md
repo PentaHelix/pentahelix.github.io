@@ -45,9 +45,13 @@ Round | Bet           | Win/Loss      | Earnings
     3 | 8             | Loss          |  -14 
     4 | 16            | Win           |   +2 
 
-At the end of these 4 rounds, even after losing 3 times and only winning once, you are still 2 points in the plus, i.e. winning 2 points. With this strategy, no matter how many times you lose in a row, as long as you keep doubling your bets, you will evenentually win back everything, plus your starting bet. This means if you start with e.g. 8 points, you will eventually win 8 points. But here comes the catch: this strategy assumes that you can keep doubling your bet infinitly. Unfortuantly, noone has an endless amount of money, which means the strategy has a major flaw. Let's chack what the chances of winning anyway are. 
+At the end of these 4 rounds, even after losing 3 times and only winning once, you are still 2 points in the plus, i.e. winning 2 points. With this strategy, no matter how many times you lose in a row, as long as you keep doubling your bets, you will evenentually win back everything, plus your starting bet. This means if you start with e.g. 8 points, you will eventually win 8 points. 
 
-Let's assume you are playing on a roulette gambling site. First, I'll create a list of all the probabilities  we know of.
+NOTE: At this point it seems like 
+
+But here comes the catch: this strategy assumes that you can keep doubling your bet infinitly. Unfortuantly, noone has an endless amount of money, which means the strategy has a major flaw. Let's chack what the chances of winning anyway are. 
+
+Let's assume I am playing on a roulette gambling site. First, I'll create a list of all the probabilities  we know of.
 
 Event | Probability   
 ----- | ------------- 
@@ -81,3 +85,5 @@ Event | Probability
 Now to calculate the probability of losing 3 times in a row, simply multiply the probability for losing.
 
 \\( 0.5333.. \cdot 0.5333.. \cdot 0.5333.. = (0.5333...)^3 \approx 0.15 = 15% \\)
+
+This means losing 3 times in a row has a probability of 15%, which seems pretty ok. 
