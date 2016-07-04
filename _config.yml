@@ -52,10 +52,6 @@ excerpt_separator: <!--excerpt-->
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-
-markdown: redcarpet
-redcarpet:   
-  extensions: ["strikethrough", "tables"] 
  
 highlighter: pygments
 permalink: /:title/
