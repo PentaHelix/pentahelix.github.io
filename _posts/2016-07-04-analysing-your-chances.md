@@ -101,3 +101,9 @@ The chance of winning 50 points with this strategy is about 44%. This means that
 By this point I hope it is apparent that the game is a lot less in your favor than it seemed in the beginning. This is because the potential loss associated with a "round" is a lot bigger than the win. 
 
 ##Jackpot
+Jackpot seems to have a lot of differences to roulette, but it is actually very similar. One of the popular strategies is to put a lot of money into the pot to have a large chance of winning. 
+
+This essentially means you have a large chance to win a bit of money, and a small chance to lose it all. Sound familiar? I could give you an example using the exact same calculations as above to show you playing like this is a bad idea.
+
+##Coinflip
+There really isn't a lot to tell you here
