@@ -76,6 +76,10 @@ Event | Probability
   Win | 7/15 = 0.46666.. ~= 46.5%  
  Loss | 8/15 = 0.53333.. ~= 53.5%
  
- Now, to calculate the chances of losing 3 times in a row, we need to use binomial distributions. Sounds complicated, and it kind of is. I won't explain the details of how it works, since this is not a maths class, but to applying the formula is easy enough.
+Now to calculate the probability of losing 3 times in a row, simply multiply the probability for losing.
+
+\\( 0.5333.. \cdot 0.5333.. \cdot 0.5333.. = 0.5333...^3 \approx 0.15 = 15% \\)
  
 \\( {N \choose x} \cdot p^x \cdot (1 - p)^{N - x} \\)
+
+This looks even more confusing, but is actually not that difficult. 
