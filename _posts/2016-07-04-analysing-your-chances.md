@@ -106,4 +106,4 @@ Jackpot seems to have a lot of differences to roulette, but it is actually very 
 This essentially means you have a large chance to win a bit of money, and a small chance to lose it all. Sound familiar? I could give you an example using the exact same calculations as above to show you playing like this is a bad idea.
 
 ##Coinflip
-There really isn't a lot to tell you here
+There really isn't a lot to tell you here.
