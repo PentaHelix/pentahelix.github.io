@@ -38,9 +38,11 @@ A situation like this might lead many people to believe that red is less likely 
 Having cleared that up, we can move on to calculating actual probabilities. Let's start off with the most famous roulette strategy, the Martingale Roulette System. Basically this means that whenever you lose, you double your bet, until you win once, winning it all back.
 
 Example:
-Round | Bet           | Win/Loss      | Wins 
+
+
+Round | Bet           | Win/Loss      | Earnings 
 ----- | ------------- | ------------- | ---- 
-    1 | 2             | Loss          |   -2 
-    2 | 4             | Loss          |   -6 
+    1 | 2             | Loss          |   -2   
+    2 | 4             | Loss          |   -6   
     3 | 8             | Loss          |  -14 
     4 | 16            | Win           |   +2 
