@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 #Analysing your chances
 
@@ -34,5 +34,3 @@ Example:
 |     2 | 4             | Loss          |   -6 |
 |     3 | 8             | Loss          |  -14 |
 |     4 | 16            | Win           |   +2 |
-
-
