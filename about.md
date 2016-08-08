@@ -19,6 +19,9 @@ I started to develop an interest for computers and anything related to informati
  - SQL
  - Adobe Photoshop/Illustrator/Fireworks
  - Aseprite (Pixel Art)
+ 
+### Projects
+
 
 ### Contact me
 
