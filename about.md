@@ -16,6 +16,7 @@ I started to develop an interest for computers and anything related to informati
 
 
 ### Skills
+
  - C#
  - Unity
  - Haxe
