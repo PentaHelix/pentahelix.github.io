@@ -1,6 +1,5 @@
 ---
 layout: aboutme
-title: About
 permalink: /about/
 published: true
 ---
