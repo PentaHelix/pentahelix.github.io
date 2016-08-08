@@ -8,6 +8,7 @@ I started to develop an interest for computers and anything related to informati
 
 ### Projects
 [Brake Block](https://play.google.com/store/apps/details?id=com.louney.brakeblock)
+
 [vertex.](https://helyx.itch.io/vertex)
 
 ...and hundreds of unreleased prototypes
